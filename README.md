@@ -1,6 +1,7 @@
 # Here is ~/home directory
 
-## declare variable read only into respective shell enviroment(e.g. git bash, msys2) bash.bashrc file.
+## Declare variable read only into respective shell enviroment bash.bashrc file. (E.g. git bash, msys2)
 ### Example path:
-C:\Program Files\Git\etc\bash.bashrc (git bash)
-C:\msys64\etc\bash.bashrc (msys2)
+- C:\Program Files\Git\etc\bash.bashrc (git bash)
+- C:\msys64\etc\bash.bashrc (msys2)
+ 
