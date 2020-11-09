@@ -143,32 +143,37 @@
                 "name": "MSYS2",
                 // "commandline" : "C:/msys64/msys2_shell.cmd -defterm -no-start -mingw32",
                 // "commandline" : "C:/msys64/msys2_shell.cmd -defterm -no-start -mingw64",
-                "commandline" : "C:/msys64/msys2_shell.cmd -defterm -no-start -msys -where \"D:/\"",
+                // "commandline" : "C:/msys64/msys2_shell.cmd -defterm -no-start -msys -where \"D:/\"",
                 // "commandline" : "cmd.exe /c \"set MSYSTEM=MINGW64&& set MSYS=winsymlinks:nativestrict&& C:/msys64/usr/bin/bash.exe --login\"",
+                "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -msys",
                 "icon": "C:/msys64/msys2.ico",
                 "tabTitle": "MSYS2",
                 "suppressApplicationTitle": true,
                 // "startingDirectory": "%USERPROFILE%",
                 "startingDirectory": "D:/",
+                "startingDirectory": "D:/Workspace/twitter_clone",
                 // "startingDirectory" : "C:/msys64/home",
 
                 // Custom 
-                "colorScheme" : "Laser",
-                "useAcrylic": true,
-                "acrylicOpacity": 0.8,
-                "acrylicOpacity": 0.3,
+                "colorScheme" : "Raspberry",
+                // "useAcrylic": true,
+                // "acrylicOpacity": 0.8,
+                // "acrylicOpacity": 0.3,
                 // "fontFace": "Cascadia Mono",
                 // "fontSize": 10,
-                // "backgroundImage": "%USERPROFILE%/WindowsTerminal/background/ubuntu_16.04.png",
+                // "backgroundImage": "%USERPROFILE%/WindowsTerminal/background/08.jpg",
+                "backgroundImageOpacity": 0.5,
                 "cursorShape": "filledBox",
                 "scrollbarState": "hidden",
                 "padding" : "5, 0, 5, 0",
                 // "padding": "0",
-                // "backgroundImageStretchMode": "uniformToFill",  // "none"、"fill"、"uniform"、"uniformToFill"
+                // "none"、"fill"、"uniform"、"uniformToFill"
+                "backgroundImageStretchMode": "uniformToFill",
                 // "center"、"left"、"top"、"right"、"bottom"
                 // "topLeft"、"topRight"、"bottomLeft"、"bottomRight"
-                "backgroundImageAlignment": "topLeft", 
-                "backgroundImageAlignment": "topRight", 
+                // "backgroundImageAlignment": "topLeft", 
+                // "backgroundImageAlignment": "topRight", 
+                "backgroundImageAlignment": "center", 
                 // "backgroundImageOpacity": 0.5,
             },
 
@@ -199,7 +204,8 @@
                 // "padding": "8, 8, 8, 8",
                 // "padding": "8, 8, 8, 40",
                 "padding": "0",
-                "backgroundImageStretchMode": "uniformToFill",  // "none"、"fill"、"uniform"、"uniformToFill"
+                // "none"、"fill"、"uniform"、"uniformToFill"
+                "backgroundImageStretchMode": "uniformToFill",
                 // "center"、"left"、"top"、"right"、"bottom"
                 // "topLeft"、"topRight"、"bottomLeft"、"bottomRight"
                 "backgroundImageAlignment": "topLeft", 
@@ -281,5 +287,28 @@
         // Light Theme
         { "name": "Frost",              "black": "#3C5712", "red": "#8D0C0C", "green": "#6AAE08", "yellow": "#991070", "blue": "#17b2ff", "purple": "#991070", "cyan": "#3C96A6", "white": "#6E386E", "brightBlack": "#749B36", "brightRed": "#F49B36", "brightGreen": "#89AF50", "brightYellow": "#991070", "brightBlue": "#27B2F6", "brightPurple": "#F2A20A", "brightCyan": "#13A8C0", "brightWhite": "#741274", "background": "#FFFFFF", "foreground": "#000000" },
         { "name": "Unikitty",           "black": "#0c0c0c", "red": "#a80f20", "green": "#bafc8b", "yellow": "#eedf4b", "blue": "#145fcd", "purple": "#ff36a2", "cyan": "#6bd1bc", "white": "#e2d7e1", "brightBlack": "#434343", "brightRed": "#d91329", "brightGreen": "#d3ffaf", "brightYellow": "#ffef50", "brightBlue": "#0075ea", "brightPurple": "#fdd5e5", "brightCyan": "#79ecd5", "brightWhite": "#fff3fe", "background": "#ff8cd9", "foreground": "#0b0b0b" },
+        
+        // Custom
+        {
+          "name"  :     "Custom",
+          "black" :     "#090300",
+          "red"   :     "#db2d20",
+          "green" :     "#01a252",
+          "yellow":     "#fded02",
+          "blue"  :     "#01a0e4",
+          "purple":     "#a16a94",
+          "cyan"  :     "#b5e4f4",
+          "white" :     "#a5a2a2",
+          "brightBlack" :   "#5c5855",
+          "brightRed"   :   "#e8bbd0",
+          "brightGreen" :   "#3a3432",
+          "brightYellow":   "#4a4543",
+          "brightBlue"  :   "#807d7c",
+          "brightPurple":   "#d6d5d4",
+          "brightCyan"  :   "#cdab53",
+          "brightWhite" :   "#f7f7f7",
+          "background"  :   "#090300",
+          "foreground"  :   "#a5a2a2"
+        }
     ],
 }
