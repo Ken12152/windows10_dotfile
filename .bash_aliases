@@ -1,4 +1,5 @@
 alias vi='vim'
 
-alias relogin='exec $SHELL -l'
+alias ls='ls --color'
 
+alias relogin='exec $SHELL -l'

@@ -5,3 +5,6 @@ fi
 if [ -f "${HOME}/.bash_function" ]; then
   source "${HOME}/.bash_function"
 fi
+
+# virtual mount
+

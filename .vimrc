@@ -90,7 +90,7 @@ set autoread
 set hidden
 set wildmenu
 
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 "set clipboard+=unnamed
 "set guioptions+=a
 
