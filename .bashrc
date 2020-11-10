@@ -8,3 +8,9 @@ fi
 
 # virtual mount
 
+
+if [ "$_shellapplication" = 'MSYS2' ]; then
+  # Setting shell colors
+  # eval "$(dircolors -b /etc/DIR_COLORS)"
+  eval "$(dircolors -b ~/DIR_COLORS)"
+fi
