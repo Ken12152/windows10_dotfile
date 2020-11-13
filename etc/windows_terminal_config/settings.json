@@ -92,7 +92,9 @@
                 "source": "Windows.Terminal.Azure"
             },
 
-            // Git Bach
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////// Git Bach ///////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             {
                 "guid" : "{29bb3953-cc76-4eb2-a91e-b67ee2789869}",
                 "hidden": false,
@@ -115,30 +117,10 @@
                 "fontSize": 12,
             },
 
-            /* default scheme list:
-            Campbell, Campbell Powershell, Vintage, 
-            One Half Dark, One Half Light,
-            */
-
-            /* custom scheme list: 
-            Raspberry, Ubuntu, AdventureTime, Andromeda, 
-            Atom, Banana Blueberry, Belafonte Night, 
-            Dracula, TokyoNightStorm, Laser, Homebrew, 
-            Blue Matrix, Scarlet Protocol, Tomorrow Night Blue,
-            Purple Rain, 
-            */
-
-            /* custom scheme dark 
-            Symfonic, Pro,
-            */ 
-
-            /* custom scheme light:
-            Frost, Unikitty, Custom
-            */
-
-            // MSYS2
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////// MSYS2 ////////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             {
-                "colorScheme" : "Castle Blue",
                 "guid": "{be5ac58c-7409-45d2-bd3d-c7583fc65e70}",
                 "hidden": false,
                 "name": "MSYS2",
@@ -152,17 +134,17 @@
                 "suppressApplicationTitle": true,
                 // "startingDirectory": "%USERPROFILE%",
                 "startingDirectory": "D:/",
-                "startingDirectory": "D:/Workspace/twitter_clone",
+                // "startingDirectory": "D:/Workspace/twitter_clone", // for debug
                 // "startingDirectory" : "C:/msys64/home",
 
                 // Custom 
-                // "colorScheme" : "Ubuntu",
+                "colorScheme" : "Castle Blue",
                 // "useAcrylic": true,
                 // "acrylicOpacity": 0.8,
                 // "acrylicOpacity": 0.3,
                 // "fontFace": "Cascadia Mono",
                 // "fontSize": 10,
-                "backgroundImage": "%USERPROFILE%/WindowsTerminal/background/01.Castle_Blue.jpg",
+                "backgroundImage": "%USERPROFILE%/WindowsTerminal/background/04.jpg",
                 "backgroundImageOpacity": 0.4,
                 "cursorShape": "filledBox",
                 "scrollbarState": "hidden",
@@ -178,7 +160,9 @@
                 // "backgroundImageOpacity": 0.5,
             },
 
-            // Ubuntu-20.04
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////// Ubuntu-20.04 /////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             {
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
@@ -223,8 +207,8 @@
     // "theme": "light",
 
     // Tamanho ao iniciar
-    "launchMode": "default",
-    //"launchMode": "maximized",
+    // "launchMode": "default",
+    "launchMode": "maximized",
     //"launchMode": "fullscreen",
 
     // Barra de titulo
@@ -260,6 +244,27 @@
         // To learn more about panes, visit https://aka.ms/terminal-panes
         { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
     ],
+
+    /* default scheme list:
+    Campbell, Campbell Powershell, Vintage, 
+    One Half Dark, One Half Light,
+    */
+
+    /* custom scheme list: 
+    Raspberry, Ubuntu, AdventureTime, Andromeda, 
+    Atom, Banana Blueberry, Belafonte Night, 
+    Dracula, TokyoNightStorm, Laser, Homebrew, 
+    Blue Matrix, Scarlet Protocol, Tomorrow Night Blue,
+    Purple Rain, 
+    */
+
+    /* custom scheme dark 
+    Symfonic, Pro,
+    */ 
+
+    /* custom scheme light:
+    Frost, Unikitty, Custom
+    */
 
     // Add custom color schemes to this array.
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes

@@ -1,11 +1,11 @@
 # Declare var SHELL_ENVIROMENT in bash.bashrc
 if [ -z "$SHELL_ENVIROMENT" ]; then
-  echo "Attention: undeclared var _shellapplication in bash.bashrc"
+  echo "Attention: undeclared var \$SHELL_ENVIROMENT in bash.bashrc"
 fi
 
-if [ -n "$SHELL_ENVIROMENT" ]; then
-  echo "This is $SHELL_ENVIROMENT"
-fi
+#if [ -n "$SHELL_ENVIROMENT" ]; then
+  #echo "This is $SHELL_ENVIROMENT"
+#fi
 
 # Add "declare -r SHELL_ENVIROMENT='MSYS2"
 # in file 'C:\msys64\etc\bash.bashrc' if use MSYS2 shell system
