@@ -1,7 +1,6 @@
-# Here is ~/home directory
+# Aqui e diretorio ~/home
 
-## Declare variable read only "___shellapplication" into respective shell enviroment "bash.bashrc" file to identify. (E.g. git bash, msys2)
+## Declare variavel read only "SHELL_ENVIROMENT" em arquivo "bash.bashrc" de respectivo ambiente de shell para identificar qual configuracao sera aplicado. (e.g. git bash, msys2...)
 ### Example path:
 - C:\Program Files\Git\etc\bash.bashrc (git bash)
 - C:\msys64\etc\bash.bashrc (msys2)
- 

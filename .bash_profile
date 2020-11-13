@@ -1,15 +1,15 @@
-# Declare var _shellapplication in bash.bashrc
-if [ -z "$_shellapplication" ]; then
+# Declare var SHELL_ENVIROMENT in bash.bashrc
+if [ -z "$SHELL_ENVIROMENT" ]; then
   echo "Attention: undeclared var _shellapplication in bash.bashrc"
 fi
 
-if [ -n "$_shellapplication" ]; then
-  echo "This is $_shellapplication"
+if [ -n "$SHELL_ENVIROMENT" ]; then
+  echo "This is $SHELL_ENVIROMENT"
 fi
 
-# Add "declare -r _shellapplication='MSYS2"
+# Add "declare -r SHELL_ENVIROMENT='MSYS2"
 # in file 'C:\msys64\etc\bash.bashrc' if use MSYS2 shell system
-if [ -n "$_shellapplication" ] && [ "$_shellapplication" = 'MSYS2' ]; then
+if [ -n "$SHELL_ENVIROMENT" ] && [ "$SHELL_ENVIROMENT" = 'MSYS2' ]; then
 
   # ~/.bashrc Read once on login
   if [ -f "${HOME}/.bashrc" ] ; then
