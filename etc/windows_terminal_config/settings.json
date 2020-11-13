@@ -43,7 +43,7 @@
         },
         "list":
         [
-        	// Windows PowerShell
+            // Windows PowerShell
             {
                 // Make changes here to the powershell.exe profile.
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -79,7 +79,7 @@
                 "colorScheme" : "Vintage",
                 "fontFace": "B612 Mono",
                 // "fontFace": "Console",
-	            "fontSize": 10,
+                "fontSize": 10,
                 // "useAcrylic": true,
                 "acrylicOpacity": 0.9,
             },
@@ -94,51 +94,51 @@
 
             // Git Bach
             {
-	            "guid" : "{29bb3953-cc76-4eb2-a91e-b67ee2789869}",
-	            "hidden": false,
-	            "name": "Git Bash",          	
-	            "commandline" : "C:/Program Files/Git/bin/bash.exe --login -i",
-	            "icon": "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico",
-	            "tabTitle": "Git Bash",
-	            "padding" : "5, 0, 5, 0",
-	            // "fontFace" : "consolas",
-	            "suppressApplicationTitle": true,
-	            "startingDirectory": "D:/",
+                "guid" : "{29bb3953-cc76-4eb2-a91e-b67ee2789869}",
+                "hidden": false,
+                "name": "Git Bash",             
+                "commandline" : "C:/Program Files/Git/bin/bash.exe --login -i",
+                "icon": "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico",
+                "tabTitle": "Git Bash",
+                "padding" : "5, 0, 5, 0",
+                // "fontFace" : "consolas",
+                "suppressApplicationTitle": true,
+                "startingDirectory": "D:/",
 
-	            // Custom
-	            "colorScheme" : "Raspberry",
-	            "useAcrylic": true,
+                // Custom
+                "colorScheme" : "Raspberry",
+                "useAcrylic": true,
                 // "acrylicOpacity": 0.86,
                 "acrylicOpacity": 0.8,
                 // "acrylicOpacity": 0.5,
-	            "fontFace": "Cascadia Mono",
-	            "fontSize": 12,
+                "fontFace": "Cascadia Mono",
+                "fontSize": 12,
             },
 
             /* default scheme list:
-			Campbell, Campbell Powershell, Vintage, 
-			One Half Dark, One Half Light,
-		    */
+            Campbell, Campbell Powershell, Vintage, 
+            One Half Dark, One Half Light,
+            */
 
-		    /* custom scheme list: 
-		    Raspberry, Ubuntu, AdventureTime, Andromeda, 
-		    Atom, Banana Blueberry, Belafonte Night, 
-		    Dracula, TokyoNightStorm, Laser, Homebrew, 
-		    Blue Matrix, Scarlet Protocol, Tomorrow Night Blue,
-		    Purple Rain, 
-		    */
+            /* custom scheme list: 
+            Raspberry, Ubuntu, AdventureTime, Andromeda, 
+            Atom, Banana Blueberry, Belafonte Night, 
+            Dracula, TokyoNightStorm, Laser, Homebrew, 
+            Blue Matrix, Scarlet Protocol, Tomorrow Night Blue,
+            Purple Rain, 
+            */
 
-			/* custom scheme dark 
-			Symfonic, Pro,
-			*/ 
+            /* custom scheme dark 
+            Symfonic, Pro,
+            */ 
 
-		    /* custom scheme light:
-		    Frost, Unikitty, Custom
-		    */
+            /* custom scheme light:
+            Frost, Unikitty, Custom
+            */
 
             // MSYS2
             {
-                "colorScheme" : "Custom",
+                "colorScheme" : "Castle Blue",
                 "guid": "{be5ac58c-7409-45d2-bd3d-c7583fc65e70}",
                 "hidden": false,
                 "name": "MSYS2",
@@ -160,15 +160,15 @@
                 // "useAcrylic": true,
                 // "acrylicOpacity": 0.8,
                 // "acrylicOpacity": 0.3,
-	            // "fontFace": "Cascadia Mono",
-	            // "fontSize": 10,
-                "backgroundImage": "%USERPROFILE%/WindowsTerminal/background/01.jpg",
-                "backgroundImageOpacity": 0.5,
+                // "fontFace": "Cascadia Mono",
+                // "fontSize": 10,
+                "backgroundImage": "%USERPROFILE%/WindowsTerminal/background/01.Castle_Blue.jpg",
+                "backgroundImageOpacity": 0.4,
                 "cursorShape": "filledBox",
                 "scrollbarState": "hidden",
-	            "padding" : "5, 0, 5, 0",
-	            // "padding": "0",
-	            // "none"、"fill"、"uniform"、"uniformToFill"
+                "padding" : "5, 0, 5, 0",
+                // "padding": "0",
+                // "none"、"fill"、"uniform"、"uniformToFill"
                 "backgroundImageStretchMode": "uniformToFill",
                 // "center"、"left"、"top"、"right"、"bottom"
                 // "topLeft"、"topRight"、"bottomLeft"、"bottomRight"
@@ -202,10 +202,10 @@
                 // "acrylicOpacity": 0.5,
                 "cursorShape": "filledBox",
                 "scrollbarState": "hidden",
-	            // "padding": "8, 8, 8, 8",
-	            // "padding": "8, 8, 8, 40",
-	            "padding": "0",
-	            // "none"、"fill"、"uniform"、"uniformToFill"
+                // "padding": "8, 8, 8, 8",
+                // "padding": "8, 8, 8, 40",
+                "padding": "0",
+                // "none"、"fill"、"uniform"、"uniformToFill"
                 "backgroundImageStretchMode": "uniformToFill",
                 // "center"、"left"、"top"、"right"、"bottom"
                 // "topLeft"、"topRight"、"bottomLeft"、"bottomRight"
@@ -265,63 +265,53 @@
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
     "schemes": 
     [
-        { "name": "Ubuntu", 			"black": "#2e3436", "red": "#cc0000", "green": "#4e9a06", "yellow": "#c4a000", "blue": "#3465a4", "purple": "#75507b", "cyan": "#06989a", "white": "#d3d7cf", "brightBlack": "#555753", "brightRed": "#ef2929", "brightGreen": "#8ae234", "brightYellow": "#fce94f", "brightBlue": "#729fcf", "brightPurple": "#ad7fa8", "brightCyan": "#34e2e2", "brightWhite": "#eeeeec", "background": "#300a24", "foreground": "#eeeeec" },
-    	{ "name": "Raspberry", 			"black": "#282A2E", "red": "#BD0940", "green": "#76AB23", "yellow": "#E0DE48", "blue": "#0170C5", "purple": "#7D498F", "cyan": "#3F8D83", "white": "#FFFFFD", "brightBlack": "#676E7A", "brightRed": "#BD6D85", "brightGreen": "#B5D680", "brightYellow": "#FFFD76", "brightBlue": "#80c8ff", "brightPurple": "#AC79BB", "brightCyan": "#8ABEB7", "brightWhite": "#FFFFFD", "background": "#3C0315", "foreground": "#FFFFFD" },
-		{ "name": "Atom", 				"black": "#000000", "red": "#fd5ff1", "green": "#87c38a", "yellow": "#ffd7b1", "blue": "#85befd", "purple": "#b9b6fc", "cyan": "#85befd", "white": "#e0e0e0", "brightBlack": "#000000", "brightRed": "#fd5ff1", "brightGreen": "#94fa36", "brightYellow": "#f5ffa8", "brightBlue": "#96cbfe", "brightPurple": "#b9b6fc", "brightCyan": "#85befd", "brightWhite": "#e0e0e0", "background": "#161719", "foreground": "#c5c8c6" },
-		{ "name": "Andromeda", 			"black": "#000000", "red": "#cd3131", "green": "#05bc79", "yellow": "#e5e512", "blue": "#2472c8", "purple": "#bc3fbc", "cyan": "#0fa8cd", "white": "#e5e5e5", "brightBlack": "#666666", "brightRed": "#cd3131", "brightGreen": "#05bc79", "brightYellow": "#e5e512", "brightBlue": "#2472c8", "brightPurple": "#bc3fbc", "brightCyan": "#0fa8cd", "brightWhite": "#e5e5e5", "background": "#262a33", "foreground": "#e5e5e5" },
-		{ "name": "Dracula", 			"black": "#000000", "red": "#ff5555", "green": "#50fa7b", "yellow": "#f1fa8c", "blue": "#bd93f9", "purple": "#ff79c6", "cyan": "#8be9fd", "white": "#bbbbbb", "brightBlack": "#555555", "brightRed": "#ff5555", "brightGreen": "#50fa7b", "brightYellow": "#f1fa8c", "brightBlue": "#bd93f9", "brightPurple": "#ff79c6", "brightCyan": "#8be9fd", "brightWhite": "#ffffff", "background": "#1e1f29", "foreground": "#f8f8f2" },
-    	{ "name": "Laser", 				"black": "#626262", "red": "#ff8373", "green": "#b4fb73", "yellow": "#09b4bd", "blue": "#fed300", "purple": "#ff90fe", "cyan": "#d1d1fe", "white": "#f1f1f1", "brightBlack": "#8f8f8f", "brightRed": "#ffc4be", "brightGreen": "#d6fcba", "brightYellow": "#fffed5", "brightBlue": "#f92883", "brightPurple": "#ffb2fe", "brightCyan": "#e6e7fe", "brightWhite": "#ffffff", "background": "#030d18", "foreground": "#f106e3" },
-    	{ "name": "Homebrew", 			"black": "#000000", "red": "#990000", "green": "#00a600", "yellow": "#999900", "blue": "#0000b2", "purple": "#b200b2", "cyan": "#00a6b2", "white": "#bfbfbf", "brightBlack": "#666666", "brightRed": "#e50000", "brightGreen": "#00d900", "brightYellow": "#e5e500", "brightBlue": "#0000ff", "brightPurple": "#e500e5", "brightCyan": "#00e5e5", "brightWhite": "#e5e5e5", "background": "#000000", "foreground": "#00ff00" },
-    	{ "name": "Blue Matrix", 		"black": "#101116", "red": "#ff5680", "green": "#00ff9c", "yellow": "#fffc58", "blue": "#00b0ff", "purple": "#d57bff", "cyan": "#76c1ff", "white": "#c7c7c7", "brightBlack": "#686868", "brightRed": "#ff6e67", "brightGreen": "#5ffa68", "brightYellow": "#fffc67", "brightBlue": "#6871ff", "brightPurple": "#d682ec", "brightCyan": "#60fdff", "brightWhite": "#ffffff", "background": "#101116", "foreground": "#00a2ff" },
-        { "name": "Scarlet Protocol", 	"black": "#101116", "red": "#ff0051", "green": "#00dc84", "yellow": "#faf945", "blue": "#0271b6", "purple": "#ca30c7", "cyan": "#00c5c7", "white": "#c7c7c7", "brightBlack": "#686868", "brightRed": "#ff6e67", "brightGreen": "#5ffa68", "brightYellow": "#fffc67", "brightBlue": "#6871ff", "brightPurple": "#bd35ec", "brightCyan": "#60fdff", "brightWhite": "#ffffff", "background": "#1c153d", "foreground": "#e41951" },
-        { "name": "AdventureTime", 		"black": "#050404", "red": "#bd0013", "green": "#4ab118", "yellow": "#e7741e", "blue": "#0f4ac6", "purple": "#665993", "cyan": "#70a598", "white": "#f8dcc0", "brightBlack": "#4e7cbf", "brightRed": "#fc5f5a", "brightGreen": "#9eff6e", "brightYellow": "#efc11a", "brightBlue": "#1997c6", "brightPurple": "#9b5953", "brightCyan": "#c8faf4", "brightWhite": "#f6f5fb", "background": "#1f1d45", "foreground": "#f8dcc0" },
-		{ "name": "Banana Blueberry", 	"black": "#17141f", "red": "#ff6b7f", "green": "#00bd9c", "yellow": "#e6c62f", "blue": "#22e8df", "purple": "#dc396a", "cyan": "#56b6c2", "white": "#f1f1f1", "brightBlack": "#495162", "brightRed": "#fe9ea1", "brightGreen": "#98c379", "brightYellow": "#f9e46b", "brightBlue": "#91fff4", "brightPurple": "#da70d6", "brightCyan": "#bcf3ff", "brightWhite": "#ffffff", "background": "#191323", "foreground": "#cccccc" },
-		{ "name": "Belafonte Night", 	"black": "#20111b", "red": "#be100e", "green": "#858162", "yellow": "#eaa549", "blue": "#426a79", "purple": "#97522c", "cyan": "#989a9c", "white": "#968c83", "brightBlack": "#5e5252", "brightRed": "#be100e", "brightGreen": "#858162", "brightYellow": "#eaa549", "brightBlue": "#426a79", "brightPurple": "#97522c", "brightCyan": "#989a9c", "brightWhite": "#d5ccba", "background": "#20111b", "foreground": "#968c83" },
-    	{ "name": "TokyoNightStorm", 	"black": "#3b4261", "red": "#f7768e", "green": "#73daca", "yellow": "#e0af68", "blue": "#7aa2f7", "purple": "#bb9af7", "cyan": "#7dcfff", "white": "#7982a9", "brightBlack": "#3b4261", "brightRed": "#f7768e", "brightGreen": "#73daca", "brightYellow": "#e0af68", "brightBlue": "#7aa2f7", "brightPurple": "#bb9af7", "brightCyan": "#7dcfff", "brightWhite": "#a9b1d6", "background": "#1f2335", "foreground": "#7982a9" },
-        { "name": "Purple Rain", 		"black": "#000000", "red": "#ff260e", "green": "#9be205", "yellow": "#ffc400", "blue": "#00a2fa", "purple": "#815bb5", "cyan": "#00deef", "white": "#ffffff", "brightBlack": "#565656", "brightRed": "#ff4250", "brightGreen": "#b8e36e", "brightYellow": "#ffd852", "brightBlue": "#00a6ff", "brightPurple": "#ac7bf0", "brightCyan": "#74fdf3", "brightWhite": "#ffffff", "background": "#21084a", "foreground": "#fffbf6" },
+        { "name": "Ubuntu",             "black": "#2e3436", "red": "#cc0000", "green": "#4e9a06", "yellow": "#c4a000", "blue": "#3465a4", "purple": "#75507b", "cyan": "#06989a", "white": "#d3d7cf", "brightBlack": "#555753", "brightRed": "#ef2929", "brightGreen": "#8ae234", "brightYellow": "#fce94f", "brightBlue": "#729fcf", "brightPurple": "#ad7fa8", "brightCyan": "#34e2e2", "brightWhite": "#eeeeec", "background": "#300a24", "foreground": "#eeeeec" },
+        { "name": "Raspberry",          "black": "#282A2E", "red": "#BD0940", "green": "#76AB23", "yellow": "#E0DE48", "blue": "#0170C5", "purple": "#7D498F", "cyan": "#3F8D83", "white": "#FFFFFD", "brightBlack": "#676E7A", "brightRed": "#BD6D85", "brightGreen": "#B5D680", "brightYellow": "#FFFD76", "brightBlue": "#80c8ff", "brightPurple": "#AC79BB", "brightCyan": "#8ABEB7", "brightWhite": "#FFFFFD", "background": "#3C0315", "foreground": "#FFFFFD" },
+        { "name": "Atom",               "black": "#000000", "red": "#fd5ff1", "green": "#87c38a", "yellow": "#ffd7b1", "blue": "#85befd", "purple": "#b9b6fc", "cyan": "#85befd", "white": "#e0e0e0", "brightBlack": "#000000", "brightRed": "#fd5ff1", "brightGreen": "#94fa36", "brightYellow": "#f5ffa8", "brightBlue": "#96cbfe", "brightPurple": "#b9b6fc", "brightCyan": "#85befd", "brightWhite": "#e0e0e0", "background": "#161719", "foreground": "#c5c8c6" },
+        { "name": "Andromeda",          "black": "#000000", "red": "#cd3131", "green": "#05bc79", "yellow": "#e5e512", "blue": "#2472c8", "purple": "#bc3fbc", "cyan": "#0fa8cd", "white": "#e5e5e5", "brightBlack": "#666666", "brightRed": "#cd3131", "brightGreen": "#05bc79", "brightYellow": "#e5e512", "brightBlue": "#2472c8", "brightPurple": "#bc3fbc", "brightCyan": "#0fa8cd", "brightWhite": "#e5e5e5", "background": "#262a33", "foreground": "#e5e5e5" },
+        { "name": "Dracula",            "black": "#000000", "red": "#ff5555", "green": "#50fa7b", "yellow": "#f1fa8c", "blue": "#bd93f9", "purple": "#ff79c6", "cyan": "#8be9fd", "white": "#bbbbbb", "brightBlack": "#555555", "brightRed": "#ff5555", "brightGreen": "#50fa7b", "brightYellow": "#f1fa8c", "brightBlue": "#bd93f9", "brightPurple": "#ff79c6", "brightCyan": "#8be9fd", "brightWhite": "#ffffff", "background": "#1e1f29", "foreground": "#f8f8f2" },
+        { "name": "Laser",              "black": "#626262", "red": "#ff8373", "green": "#b4fb73", "yellow": "#09b4bd", "blue": "#fed300", "purple": "#ff90fe", "cyan": "#d1d1fe", "white": "#f1f1f1", "brightBlack": "#8f8f8f", "brightRed": "#ffc4be", "brightGreen": "#d6fcba", "brightYellow": "#fffed5", "brightBlue": "#f92883", "brightPurple": "#ffb2fe", "brightCyan": "#e6e7fe", "brightWhite": "#ffffff", "background": "#030d18", "foreground": "#f106e3" },
+        { "name": "Homebrew",           "black": "#000000", "red": "#990000", "green": "#00a600", "yellow": "#999900", "blue": "#0000b2", "purple": "#b200b2", "cyan": "#00a6b2", "white": "#bfbfbf", "brightBlack": "#666666", "brightRed": "#e50000", "brightGreen": "#00d900", "brightYellow": "#e5e500", "brightBlue": "#0000ff", "brightPurple": "#e500e5", "brightCyan": "#00e5e5", "brightWhite": "#e5e5e5", "background": "#000000", "foreground": "#00ff00" },
+        { "name": "Blue Matrix",        "black": "#101116", "red": "#ff5680", "green": "#00ff9c", "yellow": "#fffc58", "blue": "#00b0ff", "purple": "#d57bff", "cyan": "#76c1ff", "white": "#c7c7c7", "brightBlack": "#686868", "brightRed": "#ff6e67", "brightGreen": "#5ffa68", "brightYellow": "#fffc67", "brightBlue": "#6871ff", "brightPurple": "#d682ec", "brightCyan": "#60fdff", "brightWhite": "#ffffff", "background": "#101116", "foreground": "#00a2ff" },
+        { "name": "Scarlet Protocol",   "black": "#101116", "red": "#ff0051", "green": "#00dc84", "yellow": "#faf945", "blue": "#0271b6", "purple": "#ca30c7", "cyan": "#00c5c7", "white": "#c7c7c7", "brightBlack": "#686868", "brightRed": "#ff6e67", "brightGreen": "#5ffa68", "brightYellow": "#fffc67", "brightBlue": "#6871ff", "brightPurple": "#bd35ec", "brightCyan": "#60fdff", "brightWhite": "#ffffff", "background": "#1c153d", "foreground": "#e41951" },
+        { "name": "AdventureTime",      "black": "#050404", "red": "#bd0013", "green": "#4ab118", "yellow": "#e7741e", "blue": "#0f4ac6", "purple": "#665993", "cyan": "#70a598", "white": "#f8dcc0", "brightBlack": "#4e7cbf", "brightRed": "#fc5f5a", "brightGreen": "#9eff6e", "brightYellow": "#efc11a", "brightBlue": "#1997c6", "brightPurple": "#9b5953", "brightCyan": "#c8faf4", "brightWhite": "#f6f5fb", "background": "#1f1d45", "foreground": "#f8dcc0" },
+        { "name": "Banana Blueberry",   "black": "#17141f", "red": "#ff6b7f", "green": "#00bd9c", "yellow": "#e6c62f", "blue": "#22e8df", "purple": "#dc396a", "cyan": "#56b6c2", "white": "#f1f1f1", "brightBlack": "#495162", "brightRed": "#fe9ea1", "brightGreen": "#98c379", "brightYellow": "#f9e46b", "brightBlue": "#91fff4", "brightPurple": "#da70d6", "brightCyan": "#bcf3ff", "brightWhite": "#ffffff", "background": "#191323", "foreground": "#cccccc" },
+        { "name": "Belafonte Night",    "black": "#20111b", "red": "#be100e", "green": "#858162", "yellow": "#eaa549", "blue": "#426a79", "purple": "#97522c", "cyan": "#989a9c", "white": "#968c83", "brightBlack": "#5e5252", "brightRed": "#be100e", "brightGreen": "#858162", "brightYellow": "#eaa549", "brightBlue": "#426a79", "brightPurple": "#97522c", "brightCyan": "#989a9c", "brightWhite": "#d5ccba", "background": "#20111b", "foreground": "#968c83" },
+        { "name": "TokyoNightStorm",    "black": "#3b4261", "red": "#f7768e", "green": "#73daca", "yellow": "#e0af68", "blue": "#7aa2f7", "purple": "#bb9af7", "cyan": "#7dcfff", "white": "#7982a9", "brightBlack": "#3b4261", "brightRed": "#f7768e", "brightGreen": "#73daca", "brightYellow": "#e0af68", "brightBlue": "#7aa2f7", "brightPurple": "#bb9af7", "brightCyan": "#7dcfff", "brightWhite": "#a9b1d6", "background": "#1f2335", "foreground": "#7982a9" },
+        { "name": "Purple Rain",        "black": "#000000", "red": "#ff260e", "green": "#9be205", "yellow": "#ffc400", "blue": "#00a2fa", "purple": "#815bb5", "cyan": "#00deef", "white": "#ffffff", "brightBlack": "#565656", "brightRed": "#ff4250", "brightGreen": "#b8e36e", "brightYellow": "#ffd852", "brightBlue": "#00a6ff", "brightPurple": "#ac7bf0", "brightCyan": "#74fdf3", "brightWhite": "#ffffff", "background": "#21084a", "foreground": "#fffbf6" },
         { "name": "Tomorrow Night Blue", "black": "#000000", "red": "#ff9da4", "green": "#d1f1a9", "yellow": "#ffeead", "blue": "#bbdaff", "purple": "#ebbbff", "cyan": "#99ffff", "white": "#ffffff", "brightBlack": "#000000", "brightRed": "#ff9da4", "brightGreen": "#d1f1a9", "brightYellow": "#ffeead", "brightBlue": "#bbdaff", "brightPurple": "#ebbbff", "brightCyan": "#99ffff", "brightWhite": "#ffffff", "background": "#002451", "foreground": "#ffffff" },
 
         // Dark Theme
-        { "name": "Symfonic", 			"black": "#000000", "red": "#dc322f", "green": "#56db3a", "yellow": "#ff8400", "blue": "#0084d4", "purple": "#b729d9", "cyan": "#ccccff", "white": "#ffffff", "brightBlack": "#1b1d21", "brightRed": "#dc322f", "brightGreen": "#56db3a", "brightYellow": "#ff8400", "brightBlue": "#0084d4", "brightPurple": "#b729d9", "brightCyan": "#ccccff", "brightWhite": "#ffffff", "background": "#000000", "foreground": "#ffffff" },
-        { "name": "Pro", 				"black": "#000000", "red": "#990000", "green": "#00a600", "yellow": "#999900", "blue": "#2009db", "purple": "#b200b2", "cyan": "#00a6b2", "white": "#bfbfbf", "brightBlack": "#666666", "brightRed": "#e50000", "brightGreen": "#00d900", "brightYellow": "#e5e500", "brightBlue": "#0000ff", "brightPurple": "#e500e5", "brightCyan": "#00e5e5", "brightWhite": "#e5e5e5", "background": "#000000", "foreground": "#f2f2f2" },
+        { "name": "Symfonic",           "black": "#000000", "red": "#dc322f", "green": "#56db3a", "yellow": "#ff8400", "blue": "#0084d4", "purple": "#b729d9", "cyan": "#ccccff", "white": "#ffffff", "brightBlack": "#1b1d21", "brightRed": "#dc322f", "brightGreen": "#56db3a", "brightYellow": "#ff8400", "brightBlue": "#0084d4", "brightPurple": "#b729d9", "brightCyan": "#ccccff", "brightWhite": "#ffffff", "background": "#000000", "foreground": "#ffffff" },
+        { "name": "Pro",                "black": "#000000", "red": "#990000", "green": "#00a600", "yellow": "#999900", "blue": "#2009db", "purple": "#b200b2", "cyan": "#00a6b2", "white": "#bfbfbf", "brightBlack": "#666666", "brightRed": "#e50000", "brightGreen": "#00d900", "brightYellow": "#e5e500", "brightBlue": "#0000ff", "brightPurple": "#e500e5", "brightCyan": "#00e5e5", "brightWhite": "#e5e5e5", "background": "#000000", "foreground": "#f2f2f2" },
 
         // Light Theme
-    	{ "name": "Frost", 				"black": "#3C5712", "red": "#8D0C0C", "green": "#6AAE08", "yellow": "#991070", "blue": "#17b2ff", "purple": "#991070", "cyan": "#3C96A6", "white": "#6E386E", "brightBlack": "#749B36", "brightRed": "#F49B36", "brightGreen": "#89AF50", "brightYellow": "#991070", "brightBlue": "#27B2F6", "brightPurple": "#F2A20A", "brightCyan": "#13A8C0", "brightWhite": "#741274", "background": "#FFFFFF", "foreground": "#000000" },
-    	{ "name": "Unikitty", 			"black": "#0c0c0c", "red": "#a80f20", "green": "#bafc8b", "yellow": "#eedf4b", "blue": "#145fcd", "purple": "#ff36a2", "cyan": "#6bd1bc", "white": "#e2d7e1", "brightBlack": "#434343", "brightRed": "#d91329", "brightGreen": "#d3ffaf", "brightYellow": "#ffef50", "brightBlue": "#0075ea", "brightPurple": "#fdd5e5", "brightCyan": "#79ecd5", "brightWhite": "#fff3fe", "background": "#ff8cd9", "foreground": "#0b0b0b" },
-    	
-    	// Custom
-    	{
-		  "name"  : 	"Custom", 	// Atom
-		  "black" : 	"#090300", 	// Atom
-		  "red"   : 	"#db2d20", 	// Atom
-		  "green" : 	"#87c38a", 	// Atom
-		  "green" : 	"#4e9a06",	// Ubuntu
-		  "yellow": 	"#fded02", 	// Atom
-		  "blue"  : 	"#01a0e4", 	// Atom
-		  "purple": 	"#a16a94", 	// Atom
-		  "cyan"  : 	"#b5e4f4", 	// Atom
-		  "white" : 	"#a5a2a2", 	// Atom
-		  "brightBlack" : 	"#5c5855", 	// Atom
-		  "brightRed"   : 	"#e8bbd0", 	// Atom
-
-		  "brightGreen" : 	"#94fa36", 	// Atom
-		  // "brightGreen" : 	"#8ae234",	// Ubuntu
-		  
-		  "brightYellow":	"#4a4543", 	// Atom
-		  
-		  "brightBlue"  : 	"#96cbfe", 	// Atom
-		  "brightBlue"  : 	"#729fcf", 	// Ubuntu
-		  "brightBlue"  : 	"#00a6ff", 	// Purple Rain
-		  // "brightBlue"  : 	"#ffffff", 	// Ubuntu
-		  
-		  "brightPurple": 	"#d6d5d4", 	// Atom
-		  "brightCyan"  : 	"#cdab53", 	// Atom
-		  "brightWhite" : 	"#f7f7f7", 	// Atom
-
-		  "background"  : 	"#FFFFFF", 	// Atom
-		  "background"  : 	"#012456", 	// Atom
-		  
-		  "foreground"  : 	"#000000"
-		}
+        { "name": "Frost",              "black": "#3C5712", "red": "#8D0C0C", "green": "#6AAE08", "yellow": "#991070", "blue": "#17b2ff", "purple": "#991070", "cyan": "#3C96A6", "white": "#6E386E", "brightBlack": "#749B36", "brightRed": "#F49B36", "brightGreen": "#89AF50", "brightYellow": "#991070", "brightBlue": "#27B2F6", "brightPurple": "#F2A20A", "brightCyan": "#13A8C0", "brightWhite": "#741274", "background": "#FFFFFF", "foreground": "#000000" },
+        { "name": "Unikitty",           "black": "#0c0c0c", "red": "#a80f20", "green": "#bafc8b", "yellow": "#eedf4b", "blue": "#145fcd", "purple": "#ff36a2", "cyan": "#6bd1bc", "white": "#e2d7e1", "brightBlack": "#434343", "brightRed": "#d91329", "brightGreen": "#d3ffaf", "brightYellow": "#ffef50", "brightBlue": "#0075ea", "brightPurple": "#fdd5e5", "brightCyan": "#79ecd5", "brightWhite": "#fff3fe", "background": "#ff8cd9", "foreground": "#0b0b0b" },
+        
+        // for background 01.Castle_Blue.jpg
+        {
+          "name"  :     "Castle Blue",
+          "black" :     "#090300",
+          "red"   :     "#cc0000", //--Ubuntu--//
+          "green" :     "#4e9a06", //--Ubuntu--//
+          "yellow":     "#c4a000", //--Ubuntu--//
+          "blue"  :     "#01a0e4", 
+          "purple":     "#a16a94", // Gray
+          "cyan"  :     "#06989a", //--Ubuntu--//
+          "white" :     "#a5a2a2",
+          "brightBlack" :   "#5c5855",
+          "brightRed"   :   "#ef2929", //--Ubuntu--//
+          "brightGreen" :   "#94fa36", //--Atom--//       
+          "brightYellow":   "#fce94f", //--Ubuntu--//
+          "brightBlue"  :   "#00a6ff", //--Purple Rain--//
+          "brightPurple":   "#d6d5d4", // Gray
+          "brightCyan"  :   "#34e2e2", //--Ubuntu--//
+          "brightWhite" :   "#f7f7f7",
+          "background"  :   "#012456",
+          "foreground"  :   "#ffffff",
+          // "background"  :    "#FFFFFF",
+          // "foreground"  :    "#000000",
+        }
     ],
 }
