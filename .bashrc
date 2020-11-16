@@ -1,16 +1,9 @@
 # .bash_aliases
-if [ -f "${MSYS2_SOURCE_PATH}/.bash_aliases" ]; then
-  source "${MSYS2_SOURCE_PATH}/.bash_aliases"
-fi
+source "${DOTFILES_PATH}/.bash_aliases"
 
 # .bash_function
-if [ -f "${MSYS2_SOURCE_PATH}/.bash_function" ]; then
-  source "${MSYS2_SOURCE_PATH}/.bash_function"
-fi
+source "${DOTFILES_PATH}/.bash_function"
 
 # .dircolors
-if [ -f "${MSYS2_SOURCE_PATH}/.dircolors" ]; then
-  eval "$(dircolors -b ${MSYS2_SOURCE_PATH}/.dircolors)"
-fi
-
+eval "$(dircolors -b ${DOTFILES_PATH}/.dircolors)"
 

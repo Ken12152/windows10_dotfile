@@ -1,7 +1,3 @@
-readonly MSYS2_SOURCE_PATH="${HOME}/.dotfiles"
-readonly GITBASH_SOURCE_PATH="${HOME}/.dotfiles/GitBashSource"
-
-
 #######################################################################
 # Declare var SHELL_ENVIROMENT in bash.bashrc
 if [ -n "$SHELL_ENVIROMENT" ]; then :
@@ -11,8 +7,10 @@ else
   #echo "Attention: undeclared var \$SHELL_ENVIROMENT in bash.bashrc"
 fi
 
-#######################################################################
 
+#######################################################################
+# .dotfiles dir path
+readonly DOTFILES_PATH="${HOME}/.dotfiles"
 
 
 ####################################################################################################
@@ -20,9 +18,11 @@ fi
 if [ "${SHELL_ENVIROMENT:=}" = 'MSYS2' ]; then
 
   # git-prompt.sh show git branch in prompt
-  if [ -f "${MSYS2_SOURCE_PATH}/git/git-prompt.sh" ]; then
-    source "${MSYS2_SOURCE_PATH}/git/git-prompt.sh"
-  fi
+  source "${DOTFILES_PATH}/git/git-prompt.sh"
+
+  # git-completion auto complement git command
+  source "${DOTFILES_PATH}/git/git-completion.bash"
+
 
   # Custom prompt
   export PS1='\[\e]0;\w\a\]\n\[\e[01;32m\]\u@\h\[\e[0m\]: \[\e[01;34m\]\w\[\e[01;33m\]`__git_ps1`\[\e[0m\]\n\$ '
@@ -32,14 +32,10 @@ if [ "${SHELL_ENVIROMENT:=}" = 'MSYS2' ]; then
 
 
   # .bashrc
-  if [ -f "${MSYS2_SOURCE_PATH}/.bashrc" ]; then
-    source "${MSYS2_SOURCE_PATH}/.bashrc"
-  fi
+  source "${DOTFILES_PATH}/.bashrc"
 
   # bin/
-  if [ -d "${MSYS2_SOURCE_PATH}/bin" ]; then
-    PATH="${MSYS2_SOURCE_PATH}/bin:${PATH}"
-  fi
+  PATH="${DOTFILES_PATH}/bin:${PATH}"
 
 fi
 
