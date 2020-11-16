@@ -1,1 +1,4 @@
-echo 'Make symlink'
+#!bin/bash
+
+echo 'make symlink'
+
