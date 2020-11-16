@@ -19,8 +19,13 @@ fi
 # Add "readonly SHELL_ENVIROMENT='MSYS2" into 'C:\msys64\etc\bash.bashrc' if use MSYS2
 if [ "${SHELL_ENVIROMENT:=}" = 'MSYS2' ]; then
 
+  # git-prompt.sh show git branch in prompt
+  if [ -f "${MSYS2_SOURCE_PATH}/git/git-prompt.sh" ]; then
+    source "${MSYS2_SOURCE_PATH}/git/git-prompt.sh"
+  fi
+
   # Custom prompt
-  export PS1='\[\e]0;\w\a\]\n\[\e[01;32m\]\u@\h\[\e[0m\]: \[\e[01;34m\]\w\[\e[0m\]\n\$ '
+  export PS1='\[\e]0;\w\a\]\n\[\e[01;32m\]\u@\h\[\e[0m\]: \[\e[01;34m\]\w\[\e[01;33m\]`__git_ps1`\[\e[0m\]\n\$ '
 
   # Default prompt
   # export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[35m\]$MSYSTEM\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n\$ '
