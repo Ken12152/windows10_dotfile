@@ -1,42 +1,5 @@
-" Call "call dein#install()" to install plugins
-
-"-----------------------------------------------------------------------------
-" dein.vim Setting
-"-----------------------------------------------------------------------------
-" directory to install dein
-let s:dein_dir = expand('~/.cache/dein')
-
-let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
-
-" dein installation check
-if &runtimepath !~# '/dein.vim'
-  if !isdirectory(s:dein_repo_dir)
-    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
-  endif
-  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
-endif
-
-if dein#load_state('~/.cache/dein')
-  call dein#begin('~/.cache/dein')
-
-  " location toml file
-  let g:rc_dir    = expand('~/.dotfiles/vim')
-  let s:toml      = g:rc_dir . '/dein.toml'
-  let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
-
-  " read and cache toml file
-  call dein#load_toml(s:toml,      {'lazy': 0})
-  call dein#load_toml(s:lazy_toml, {'lazy': 1})
-
-  " Add plugin settings into toml file 
-
-  call dein#end()
-  call dein#save_state()
-endif
-
-filetype plugin indent on
-syntax enable
-
+" import dein plugins
+source ~/.dotfiles/.vimrc.dein
 
 "-----------------------------------------------------------------------------
 " Colorscheme
