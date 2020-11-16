@@ -13,6 +13,3 @@ if [ -f "${MSYS2_SOURCE_PATH}/.dircolors" ]; then
   eval "$(dircolors -b ${MSYS2_SOURCE_PATH}/.dircolors)"
 fi
 
-
-# virtual mount
-
