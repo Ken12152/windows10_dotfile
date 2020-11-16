@@ -1,16 +1,18 @@
-if [ -f "${HOME}/.bash_aliases" ]; then
-  source "${HOME}/.bash_aliases"
+# .bash_aliases
+if [ -f "${MSYS2_SOURCE_PATH}/.bash_aliases" ]; then
+  source "${MSYS2_SOURCE_PATH}/.bash_aliases"
 fi
 
-if [ -f "${HOME}/.bash_function" ]; then
-  source "${HOME}/.bash_function"
+# .bash_function
+if [ -f "${MSYS2_SOURCE_PATH}/.bash_function" ]; then
+  source "${MSYS2_SOURCE_PATH}/.bash_function"
 fi
+
+# .dircolors
+if [ -f "${MSYS2_SOURCE_PATH}/.dircolors" ]; then
+  eval "$(dircolors -b ${MSYS2_SOURCE_PATH}/.dircolors)"
+fi
+
 
 # virtual mount
 
-
-if [ "$SHELL_ENVIROMENT" = 'MSYS2' ]; then
-  # Setting shell colors
-  # eval "$(dircolors -b /etc/DIR_COLORS)"
-  eval "$(dircolors -b ~/DIR_COLORS)"
-fi

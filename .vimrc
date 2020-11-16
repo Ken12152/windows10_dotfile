@@ -20,7 +20,7 @@ if dein#load_state('~/.cache/dein')
   call dein#begin('~/.cache/dein')
 
   " location toml file
-  let g:rc_dir    = expand('~/.vim/rc')
+  let g:rc_dir    = expand('~/.dotfiles/vim')
   let s:toml      = g:rc_dir . '/dein.toml'
   let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
 
