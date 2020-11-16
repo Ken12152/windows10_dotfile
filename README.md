@@ -1,4 +1,6 @@
-# Aqui e diretorio ~/home
+# Aqui e diretorio ~/.dotfiles
+
+## Adiciona variaveis de ambiente 'MSYS2_PATH_TYPE' com valor 'inherit'
 
 ## Declara variavel readonly "SHELL_ENVIROMENT" em arquivo "bash.bashrc" de respectivo ambiente de shell para identificar qual configuracao sera aplicado. (e.g. git bash, msys2...)
 ### Example path:
