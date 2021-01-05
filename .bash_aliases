@@ -1,13 +1,10 @@
 # Temporary Alias while Production
-source "${DOTFILES_PATH}/bin/working_directory/.working_directory"
-
-#readonly working_directory=
-#alias working="cd /d/Workspace/${working_directory}"
-
+source "${DOTFILES_PATH}/datas/.working_directory"
 alias working="cd ${working_directory}"
 
 
-alias fixtaiko='bash fixtaiko.sh'
+# fix taikojiro bug
+alias tjfix='bash tjfix.sh'
 
 
 alias vi='vim'

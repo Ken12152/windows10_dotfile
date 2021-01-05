@@ -1,3 +1,18 @@
+# working
+
+function setworking()
+{
+  WD_WRITTEN_FP="${DOTFILES_PATH}/datas/.working_directory"
+
+  if [ -e ${WD_WRITTEN_FP} ]; then
+    rm ${WD_WRITTEN_FP}
+  fi
+
+  echo "readonly working_directory='`pwd`'" >> ${WD_WRITTEN_FP}
+  echo "set working_directory: `pwd`"
+}
+
+
 # funny function 
 
 function matrix()
