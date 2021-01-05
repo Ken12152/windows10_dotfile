@@ -4,7 +4,7 @@ function setworking()
 {
   WD_WRITTEN_FP="${DOTFILES_PATH}/datas/.working_directory"
 
-  if [ -e ${WD_WRITTEN_FP} ]; then
+  if [ -f ${WD_WRITTEN_FP} ]; then
     rm ${WD_WRITTEN_FP}
   fi
 
