@@ -1,0 +1,92 @@
+{
+    "workbench.sideBar.location": "left",
+    "workbench.statusBar.visible": true,
+    "explorer.confirmDelete": false,
+    "workbench.activityBar.visible": true,
+    "window.menuBarVisibility": "default",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "none",
+    //"editor.fontLigatures": true,
+    // "editor.fontWeight": "500",
+    "C_Cpp.updateChannel": "Insiders",
+    "workbench.colorTheme": "Default High Contrast",
+    "terminal.integrated.rendererType": "dom",
+    // "editor.fontSize": 14.999,
+    "html.format.extraLiners": "",
+    "html.format.endWithNewline": true,
+    "html.format.maxPreserveNewLines": 1,
+    "html.format.unformatted": "span",
+
+    // font
+    // "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Hack, monospace",
+    // "editor.fontSize": 16.0,
+    // "editor.fontSize": 14.0,
+    "editor.fontSize": 15.0,
+    // "editor.fontSize": 14.999,
+    "editor.fontWeight": "normal",
+    // "editor.fontWeight": "500",
+
+    // custom
+    "editor.cursorBlinking": "smooth",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "node_modules": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true
+    },
+
+    // use GitBash
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+    // setting for html
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.suggest.insertMode": "replace"
+    },
+
+    "workbench.iconTheme": "vscode-great-icons",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.wordWrap": "on",
+    "html.format.wrapLineLength": 0, // default: 120
+
+
+    // vim
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": ["<C-j>"], "after": ["1", "0", "j"] },
+        { "before": ["<C-k>"], "after": ["1", "0", "k"] },
+        { "before": ["H"], "after": ["^"] },
+        { "before": ["L"], "after": ["$"] },
+    ],
+
+    "vim.normalModeKeyBindings": [
+
+    ],
+
+    "vim.insertModeKeyBindings": [
+      { "before": ["j", "j"], "after": ["<Esc>"] }
+    ],
+
+    "vim.handleKeys": {
+        "<C-w>": false,
+        "<C-b>": false,
+    },
+
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color":"rgba(0, 240, 170, 0.5)", 
+    "vim.highlightedyank.duration": 200, "vim.useSystemClipboard": true, 
+
+    // 
+    "code-runner.clearPreviousOutput": true,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": -1,
+}

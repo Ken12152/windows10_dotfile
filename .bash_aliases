@@ -1,4 +1,4 @@
-# Temporary Alias while Production
+# temporary alia while to workspace
 source "${DOTFILES_PATH}/datas/.working_directory"
 alias working="cd ${working_directory}"
 
@@ -7,6 +7,11 @@ alias working="cd ${working_directory}"
 alias tjfix='bash tjfix.sh'
 
 
+# vscodebackup
+alias vscodebackup='bash vscodeBackup.sh'
+
+
+# general
 alias vi='vim'
 
 alias ls='ls --color -F'
@@ -23,6 +28,8 @@ alias download='cd /d/Downloads'
 alias relogin='exec $SHELL -l'
 
 alias cls='clear'
+
+alias clsworking="working && cls"
 
 # MongoDB
 alias mongod='mongod --config "C:\\mongodb\\mongod.conf"'
