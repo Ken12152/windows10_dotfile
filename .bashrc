@@ -8,5 +8,5 @@ source "${DOTFILES_PATH}/.bash_function"
 eval "$(dircolors -b ${DOTFILES_PATH}/.dircolors)"
 
 # security
-alias rm='rm -i
+alias rm='rm -i'
 

@@ -36,5 +36,5 @@ alias clsworking="working && cls"
 alias mongod='mongod --config "C:\\mongodb\\mongod.conf"'
 
 # security
-alias rm='rm -i
+alias rm='rm -i'
 
