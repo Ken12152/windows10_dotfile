@@ -15,7 +15,7 @@ readonly src_file="${input_src_filename#x}"
 
 readonly ext="${src_file#*.}"
 readonly filename_without_ext="${src_file%.${ext}}"
-readonly output_file="${filename_without_ext}_scrollx2.${ext}"
+readonly output_file="${filename_without_ext}_scroll2x.${ext}"
 
 # file does not exist:
 if [ ! -f $src_file ]; then
@@ -28,6 +28,13 @@ is_firstline=true
 cat $src_file | while read line || [ -n "${line}" ]
 do
     output_line=$line
+
+    if "${is_firstline}"; then
+        echo $output_line > $output_file
+
+        is_firstline=false
+        continue
+    fi
 
     # if contain #SCROLL X.XXX
     # if [[ ${line} =~ ^(\#SCROLL\ )([0-9]+(\.[0-9]+)?)$ ]]; then
@@ -42,18 +49,17 @@ do
         # echo $output_line
     fi
 
-    if "${is_firstline}"; then
-        echo $output_line > $output_file
-
-        is_firstline=false
-        continue
-    fi
-
     echo $output_line >> $output_file
+
+    # insert #SCROLL 2.0 at the beginning(after the #START)
+    if [[ ${line} =~ ^\#START ]]; then
+        # echo ${BASH_REMATCH[0]}
+        echo '#SCROLL 2.0' >> $output_file
+    fi
 done
 
 # remove source file
-# rm $src_file
+rm $src_file
 
 # echo 'success!'
 exit 0

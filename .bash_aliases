@@ -4,6 +4,7 @@ alias working="cd ${working_directory}"
 
 
 # fix taikojiro bug
+alias tj='cd /d/TJAPlayer3/taiko_no_tatsujin/taikojiro283'
 alias tjfix='bash tjfix.sh'
 
 
@@ -33,3 +34,7 @@ alias clsworking="working && cls"
 
 # MongoDB
 alias mongod='mongod --config "C:\\mongodb\\mongod.conf"'
+
+# security
+alias rm='rm -i
+
