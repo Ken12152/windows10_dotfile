@@ -1,0 +1,30 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+shift+left",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "workbench.action.focusRightGroup"
+    },
+    { 
+        "key": "ctrl+alt+enter", 
+        "command": "workbench.action.terminal.focus" 
+    },
+    { 
+        "key": "ctrl+alt+enter", 
+        "command": "workbench.action.focusActiveEditorGroup", 
+        "when":"terminalFocus" 
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorHasSelection && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorHasSelection && editorTextFocus"
+    }
+]

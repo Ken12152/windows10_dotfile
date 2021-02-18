@@ -1,6 +1,12 @@
 #!bin/bash
 
-readonly sourcePath='/c/Users/Felipe/AppData/Roaming/Code/User/settings.json'
+readonly settingsPath='/c/Users/Felipe/AppData/Roaming/Code/User/settings.json'
+readonly keybindingsPath='/c/Users/Felipe/AppData/Roaming/Code/User/keybindings.json'
 readonly dest='/c/Users/Felipe/.dotfiles/etc/vscode_settings/'
 
-cp ${sourcePath} ${dest}
+cp ${settingsPath} ${dest}
+cp ${keybindingsPath} ${dest}
+
+#echo "`date`: create settings.json, keybindings.json backups."
+echo "Date: `date`"
+echo "Created settings.json, keybindings.json backups."
