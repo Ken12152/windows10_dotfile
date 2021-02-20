@@ -24,8 +24,8 @@
 	"import javascript script": {
 		"prefix": "ijs",
 		"body": [
-			"<script type=\"text/javascript\" src=\"$1\"><script>"
+			"<script src=\"$1\"></script>"
 		],
-		"description": "<script type=\"text/javascript\" src=\"...\"><script>"
+		"description": "<script src=\"...\"><script>"
 	},
 }

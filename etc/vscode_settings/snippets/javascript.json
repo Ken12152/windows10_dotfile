@@ -20,4 +20,20 @@
 		],
 		"description": "Log output to console"
 	},
+
+	"Import React": {
+		"prefix": "ir",
+		"body": [
+			"import React from 'react'",
+		],
+		"description": "import react"
+	},
+
+	"Import ReactDOM": {
+		"prefix": "ird",
+		"body": [
+			"import ReactDOM from 'react-dom'",
+		],
+		"description": "import react-dom"
+	},
 }

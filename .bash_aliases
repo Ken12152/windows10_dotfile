@@ -8,8 +8,23 @@ alias tj='cd /d/TJAPlayer3/taiko_no_tatsujin/taikojiro283'
 alias tjfix='bash tjfix.sh'
 
 
-# vscodebackup
+# vscode
+alias code='code -n'
 alias vscodebackup='bash vscodeBackup.sh'
+
+
+# path
+alias work='cd /d/Workspace'
+alias dotfiles='cd ~/.dotfiles'
+alias desktop='cd /d/Desktop'
+alias download='cd /d/Downloads'
+
+
+
+# MongoDB
+alias mongod='mongod --config "C:\\mongodb\\mongod.conf"'
+
+
 
 
 # general
@@ -17,23 +32,15 @@ alias vi='vim'
 
 alias ls='ls --color -F'
 alias la='ls -A'
-alias ll='ls -la'
+alias ll='ls -lA'
 
 alias mk='touch'
-
-alias work='cd /d/Workspace'
-alias dotfiles='cd ~/.dotfiles'
-alias desktop='cd /d/Desktop'
-alias download='cd /d/Downloads'
 
 alias relogin='exec $SHELL -l'
 
 alias cls='clear'
 
 alias clsworking="working && cls"
-
-# MongoDB
-alias mongod='mongod --config "C:\\mongodb\\mongod.conf"'
 
 # security
 alias rm='rm -i'

@@ -97,4 +97,5 @@
     "explorer.confirmDragAndDrop": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "window.zoomLevel": -1,
+    "window.newWindowDimensions": "maximized",
 }
