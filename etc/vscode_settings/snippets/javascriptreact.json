@@ -14,7 +14,7 @@
 	// }
 
 	"Print to console": {
-		"prefix": "cl",
+		"prefix": "log",
 		"body": [
 			"console.log($1)"
 		],
