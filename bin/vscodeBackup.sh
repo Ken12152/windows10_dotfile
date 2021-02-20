@@ -1,12 +1,34 @@
 #!bin/bash
 
-readonly settingsPath='/c/Users/Felipe/AppData/Roaming/Code/User/settings.json'
-readonly keybindingsPath='/c/Users/Felipe/AppData/Roaming/Code/User/keybindings.json'
-readonly dest='/c/Users/Felipe/.dotfiles/etc/vscode_settings/'
+# settings path
+readonly settings_path='/c/Users/Felipe/AppData/Roaming/Code/User/settings.json'
+readonly keybindings_path='/c/Users/Felipe/AppData/Roaming/Code/User/keybindings.json'
 
-cp ${settingsPath} ${dest}
-cp ${keybindingsPath} ${dest}
+# user snippets path
+readonly snippets_path='/c/Users/Felipe/AppData/Roaming/Code/User/snippets/*'
 
-#echo "`date`: create settings.json, keybindings.json backups."
+# backup file path
+readonly settings_dest='/c/Users/Felipe/.dotfiles/etc/vscode_settings'
+readonly snippets_dest='/c/Users/Felipe/.dotfiles/etc/vscode_settings/snippets'
+
+
+# settings
+cp ${settings_path} ${settings_dest}
+cp ${keybindings_path} ${settings_dest}
+
+
+# user snippets
+cp ${snippets_path} ${snippets_dest}
+
+
+# log
 echo "Date: `date`"
-echo "Created settings.json, keybindings.json backups."
+echo 'Created backup: '
+echo ''
+
+echo "----- settings -----"
+ls -lF ${settings_dest} | grep -v ./ | grep -v total
+
+echo ''
+echo "----- snippets -----"
+ls -lF ${snippets_dest} | grep -v ./ | grep -v total
