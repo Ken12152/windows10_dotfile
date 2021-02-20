@@ -67,19 +67,21 @@
 
 
     // vim
-    // "vim.hlsearch": true,
-    // "vim.foldfix": true,
+    "vim.hlsearch": true,
+    "vim.foldfix": true,
 
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["<C-j>"], "after": ["5", "j"] },
         { "before": ["<C-k>"], "after": ["5", "k"] },
         { "before": ["C-h"], "after": ["^"] },
         { "before": ["C-l"], "after": ["$"] },
+        { "before": ["<Esc>"], "commands": [":nohl"] },
+        { "before": ["x"], "after": ["\"", "_", "x"] },
+        { "before": ["s"], "after": ["\"", "_", "s"] },
+        { "before": ["<c-l><s-l>"], "after": ["5", "k"] },
     ],
 
-    "vim.normalModeKeyBindings": [
-
-    ],
+    "vim.normalModeKeyBindings": [],
 
     "vim.insertModeKeyBindings": [
       { "before": ["j", "j"], "after": ["<Esc>"] }
@@ -88,7 +90,9 @@
     "vim.visualModeKeyBindingsNonRecursive": [
         { "before": ["<C-j>"], "after": ["5", "j"] },
         { "before": ["<C-k>"], "after": ["5", "k"] },
-        { "before": ["p"], "after": ["p", "g", "v", "y", "e"] }
+        { "before": ["p"], "after": ["\"", "_", "d", "P"] },
+        { "before": ["C-h"], "after": ["^"] },
+        { "before": ["C-l"], "after": ["$"] },
     ],
 
     "vim.handleKeys": {

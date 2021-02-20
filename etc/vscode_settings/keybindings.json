@@ -42,7 +42,7 @@
     },
     { 
         "key": "ctrl+shift+j", 
-        "command": ""
+        "command": "editor.action.joinLines"
     },
     {
         "key": "ctrl+j", 
@@ -55,13 +55,18 @@
         "when": "inQuickOpen"
     },
     {
+        "key": "ctrl+[",
+        "command": "workbench.action.closeQuickOpen",
+        "when": "inQuickOpen"
+    },
+    {
         "key": "ctrl+j", 
-        "command": "selectNextSuggestion", 
+        "command": "selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     {
         "key": "ctrl+k", 
         "command": "selectPrevSuggestion", 
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus",
     },
 ]
