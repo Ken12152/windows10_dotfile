@@ -78,7 +78,7 @@
         { "before": ["<Esc>"], "commands": [":nohl"] },
         { "before": ["x"], "after": ["\"", "_", "x"] },
         { "before": ["s"], "after": ["\"", "_", "s"] },
-        { "before": ["<c-l><s-l>"], "after": ["5", "k"] },
+        // { "before": ["g", "J"], "after": ["J", "x"] },
     ],
 
     "vim.normalModeKeyBindings": [],
@@ -98,10 +98,11 @@
     "vim.handleKeys": {
         "<C-w>": false,
         "<C-b>": false,
+        // "gJ": false,
     },
 
     "vim.highlightedyank.enable": true,
-    "vim.highlightedyank.color":"rgba(1, 240, 170, 0.5)", 
+    "vim.highlightedyank.color": "rgba(1, 240, 170, 0.5)", 
     "vim.highlightedyank.duration": 201, "vim.useSystemClipboard": true, 
 
 
