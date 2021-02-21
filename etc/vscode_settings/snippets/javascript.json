@@ -22,7 +22,11 @@
 	},
 
 	"Import React": {
-		"prefix": "ir",
+		"prefix": [
+			"ir",
+			"impreact",
+			"importreact",
+		],
 		"body": [
 			"import React from 'react'",
 		],
@@ -30,7 +34,11 @@
 	},
 
 	"Import ReactDOM": {
-		"prefix": "ird",
+		"prefix": [
+			"ird",
+			"impreactdom",
+			"importreactdom"
+		],
 		"body": [
 			"import ReactDOM from 'react-dom'",
 		],
