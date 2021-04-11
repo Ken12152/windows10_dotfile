@@ -44,4 +44,52 @@
 		],
 		"description": "import react-dom"
 	},
+
+	"Import styled-components": {
+		"prefix": [
+			"istyled",
+			"impstyled",
+			"importstyled"
+		],
+		"body": [
+			"import styled from 'styled-components'",
+		],
+		"description": "import styled-components"
+	},
+
+	"Import styled-components-css": {
+		"prefix": [
+			"istyledcss",
+			"impstyledcss",
+			"importstyledcss"
+		],
+		"body": [
+			"import { css } from 'styled-components'",
+		],
+		"description": "import { css } from styled-components"
+	},
+
+	"export default": {
+		"prefix": [
+			"ed",
+			"exd",
+			"expd",
+			"expdef"
+		],
+		"body": [
+			"export default ",
+		],
+		"description": "export default ..."
+	},
+
+	"styled component": {
+		"prefix": [
+			"styled",
+		],
+		"body": [
+			"const $1 = styled.div`",
+			"`"
+		],
+		"description": "const ... = styled.div`...`"
+	},
 }

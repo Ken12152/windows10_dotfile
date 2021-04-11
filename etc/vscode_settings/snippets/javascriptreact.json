@@ -72,6 +72,18 @@
 		"description": "import styled-components"
 	},
 
+	"Import styled-components-css": {
+		"prefix": [
+			"istyledcss",
+			"impstyledcss",
+			"importstyledcss"
+		],
+		"body": [
+			"import { css } from 'styled-components'",
+		],
+		"description": "import { css } from styled-components"
+	},
+
 	"React class component template": {
 		"prefix": [
 			"rclass",
@@ -90,5 +102,87 @@
 			"export default $1"
 		],
 		"description": "react class component template"
-	}
+	},
+
+	"react function component ()": {
+		"prefix": [
+			"rf()",
+			"reactfunction()",
+		],
+		"body": [
+			"const $1 = props => (",
+			")",
+			"",
+			"export default $1"
+		],
+		"description": "const ... = props => ( ... )"
+	},
+
+	"react function component export default()": {
+		"prefix": [
+			"edrf()",
+			"exportdefaultreactfunction()",
+		],
+		"body": [
+			"export default props => (",
+			")",
+			"",
+		],
+		"description": "export default props => ( ... )"
+	},
+
+	"react function component {}": {
+		"prefix": [
+			"rf{}",
+			"reactfunction{}",
+		],
+		"body": [
+			"const $1 = props => {",
+			"\treturn (",
+			"\t)",
+			"}",
+			"",
+			"export default $1"
+		],
+		"description": "const ... = props => { ... }"
+	},
+
+	"react function component export default {}": {
+		"prefix": [
+			"edrf{}",
+			"exportdefaultreactfunction{}",
+		],
+		"body": [
+			"export default props => {",
+			"\treturn (",
+			"\t)",
+			"}",
+			"",
+		],
+		"description": "export default props => { ... }"
+	},
+
+	"export default": {
+		"prefix": [
+			"ed",
+			"exd",
+			"expd",
+			"expdef"
+		],
+		"body": [
+			"export default ",
+		],
+		"description": "export default ..."
+	},
+
+	"styled component": {
+		"prefix": [
+			"styled",
+		],
+		"body": [
+			"const $1 = styled.div`",
+			"`"
+		],
+		"description": "const ... = styled.div`...`"
+	},
 }

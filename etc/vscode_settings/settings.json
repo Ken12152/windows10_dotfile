@@ -1,11 +1,15 @@
 {
-    "workbench.colorTheme": "monokai-charcoal (red)",
+    // "workbench.colorCustomizations": {
+    //     "editor.background": "#0d1117",
+    //     "editorGutter.background": "#0d1117",
+    //     "statusBar.background": "#0d1117",
+    // },
+
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.sideBar.location": "left",
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": true,
     "window.newWindowDimensions": "maximized",
-    "window.zoomLevel": -1,
 
 
     // font
@@ -26,7 +30,7 @@
 
 
     // explorer
-    "window.menuBarVisibility": "default",
+    // "window.menuBarVisibility": "default",
     "explorer.confirmDragAndDrop": true,
     "explorer.confirmDelete": true,
     "files.exclude": {
@@ -69,16 +73,19 @@
     // vim
     "vim.hlsearch": true,
     "vim.foldfix": true,
+    "vim.incsearch": true,
 
     "vim.normalModeKeyBindingsNonRecursive": [
-        { "before": ["<C-j>"], "after": ["5", "j"] },
-        { "before": ["<C-k>"], "after": ["5", "k"] },
+        { "before": ["j"], "after": ["g", "j"] },
+        { "before": ["k"], "after": ["g", "k"] },
+        { "before": ["<C-j>"], "after": ["5", "g", "j"] },
+        { "before": ["<C-k>"], "after": ["5", "g","k"] },
         { "before": ["C-h"], "after": ["^"] },
         { "before": ["C-l"], "after": ["$"] },
-        { "before": ["<Esc>"], "commands": [":nohl"] },
         { "before": ["x"], "after": ["\"", "_", "x"] },
         { "before": ["s"], "after": ["\"", "_", "s"] },
-        // { "before": ["g", "J"], "after": ["J", "x"] },
+        { "before": ["<Esc>"], "commands": [":nohl"] },
+        { "before": ["<C-[>", "<C-[>"], "commands": [":nohl"] }
     ],
 
     "vim.normalModeKeyBindings": [],
@@ -98,7 +105,6 @@
     "vim.handleKeys": {
         "<C-w>": false,
         "<C-b>": false,
-        // "gJ": false,
     },
 
     "vim.highlightedyank.enable": true,
@@ -129,4 +135,10 @@
     "terminal.integrated.shellArgs.windows": [
         "--login"
     ],
+    "backgroundCover.imagePath": "d:\\Kenzo\\Wallpaper\\0.Destaque do Windows\\1b6500d8769cc51833bb33497d25688ab4caf34394855cfcf24a3c957f19ebb9.jpg",
+    "backgroundCover.opacity": 0.4,
+    "backgroundCover.randomImageFolder": "d:\\Kenzo\\Wallpaper\\0.Destaque do Windows",
+    "backgroundCover.autoStatus": true,
+    "workbench.colorTheme": "Dark+ Black",
+    "window.zoomLevel": -1
 }
