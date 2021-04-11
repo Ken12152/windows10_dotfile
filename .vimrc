@@ -1,11 +1,20 @@
 " import dein plugins
 source ~/.dotfiles/.vimrc.dein
 
+" import keybindings
+source ~/.dotfiles/.vimrc.keybind
+
+
 "-----------------------------------------------------------------------------
 " Colorscheme
 "-----------------------------------------------------------------------------
 " molokai, none( ) 
+autocmd ColorScheme * highlight LineNr ctermbg=0 guibg=#000000 
+autocmd ColorScheme * highlight Normal ctermbg=0 guibg=#000000 
 colorscheme molokai
+
+"set background=dark
+"set background=light
 
 
 "-----------------------------------------------------------------------------
@@ -31,19 +40,6 @@ let g:ctrlp_types = ['fil']
 
 
 "-----------------------------------------------------------------------------
-" KeyBind
-"-----------------------------------------------------------------------------
-" esc pressionando jj
-inoremap <silent> jj <ESC>
-
-" abrir .vimrc com <space> + .
-nnoremap <space>. :<c-u>tabedit $MYVIMRC<CR>
-
-" cancel search highlight
-nmap <silent> <Esc><Esc> :nohlsearch<CR>
-
-
-"-----------------------------------------------------------------------------
 " General
 "-----------------------------------------------------------------------------
 set fenc=utf-8
@@ -57,10 +53,6 @@ set wildmenu
 "set clipboard+=unnamed
 "set guioptions+=a
 
-" Appearence
-set background=dark
-"set background=light
-
 " Cursor
 set number
 set cursorline
@@ -68,11 +60,6 @@ set cursorcolumn
 set showmatch
 
 "set virtualedit=onemore
-
-nnoremap j gj
-nnoremap k gk
-nnoremap <down> gj
-nnoremap <up> gk
 
 set whichwrap=b,s,h,l,<,>,[,],~
 
