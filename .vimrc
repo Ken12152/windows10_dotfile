@@ -5,7 +5,7 @@ source ~/.dotfiles/.vimrc.dein
 " Colorscheme
 "-----------------------------------------------------------------------------
 " molokai, none( ) 
-"colorscheme molokai
+colorscheme molokai
 
 
 "-----------------------------------------------------------------------------

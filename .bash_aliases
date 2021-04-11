@@ -11,6 +11,7 @@ alias tjfix='bash tjfix.sh'
 # vscode
 alias code='code -n'
 alias vscodebackup='bash vscodeBackup.sh'
+alias windowsterminalbackup='bash windowsTerminalBackup.sh'
 
 
 # path
