@@ -19,6 +19,7 @@ alias work='cd /d/Workspace'
 alias dotfiles='cd ~/.dotfiles'
 alias desktop='cd /d/Desktop'
 alias download='cd /d/Downloads'
+alias xampp='cd /c/xampp/htdocs'
 
 
 
