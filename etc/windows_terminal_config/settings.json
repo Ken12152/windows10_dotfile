@@ -102,7 +102,7 @@
 	            "suppressApplicationTitle": true,
 	            "icon": "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico",
 
-	            "commandline" : "C:/Program Files/Git/bin/bash.exe --login -i",
+	            "commandline" : "C:/Program Files/Git/bin/bash.exe --login -i -l",
 	            "startingDirectory": "D:/Workspace",
 
 				// 1:
