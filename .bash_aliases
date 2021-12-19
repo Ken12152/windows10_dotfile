@@ -1,25 +1,23 @@
-# temporary alia while to workspace
+# .working_directory: there is a current working dir.
 source "${DOTFILES_PATH}/datas/.working_directory"
-alias working="cd ${working_directory}"
-
-
-# fix taikojiro bug
-alias tj='cd /d/TJAPlayer3/taiko_no_tatsujin/taikojiro283'
-alias tjfix='bash tjfix.sh'
-
-
-# vscode
-alias code='code -n'
-alias vscodebackup='bash vscodeBackup.sh'
-alias windowsterminalbackup='bash windowsTerminalBackup.sh'
-
 
 # path
+alias working="cd ${working_directory}"
+
 alias work='cd /d/Workspace'
 alias dotfiles='cd ~/.dotfiles'
 alias desktop='cd /d/Desktop'
 alias download='cd /d/Downloads'
-alias xampp='cd /c/xampp/htdocs'
+# alias xampp='cd /c/xampp/htdocs'
+
+
+# fix taikojiro bug
+alias tj='cd /d/TJAPlayer3/taiko_no_tatsujin/taikojiro283'
+# alias tjfix='bash tjfix.sh'
+
+
+# vscode
+alias code='code -n'
 
 
 # MongoDB
@@ -43,4 +41,3 @@ alias clsworking="working && cls"
 
 # security
 alias rm='rm -i'
-
