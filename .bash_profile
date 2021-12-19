@@ -1,37 +1,37 @@
-#######################################################################
-# Declare var SHELL_ENVIROMENT in bash.bashrc
-if [ -n "$SHELL_ENVIROMENT" ]; then :
+readonly CUSTOM_SETTING_TYPE='default'
+
+if [ -n "$CUSTOM_SETTING_TYPE" ]; then :
   #echo "This is $SHELL_ENVIROMENT"
 else
-  echo ${SHELL_ENVIROMENT:?}
+  echo ${CUSTOM_SETTING_TYPE?}
   #echo "Attention: undeclared var \$SHELL_ENVIROMENT in bash.bashrc"
 fi
 
 
 #######################################################################
-# .dotfiles dir path
+# .dotfiles folder path
 readonly DOTFILES_PATH="${HOME}/.dotfiles"
 
 
-####################################################################################################
-# Add "readonly SHELL_ENVIROMENT='MSYS2" into 'C:\msys64\etc\bash.bashrc' if use MSYS2
-if [ "${SHELL_ENVIROMENT:=}" = 'MSYS2' ]; then
+#######################################################################
+# default setting:
+if [ "${CUSTOM_SETTING_TYPE:=}" = 'default' ]; then
 
-  # git-prompt.sh show git branch in prompt
+  # git-prompt.sh: make prompt show current branch
   source "${DOTFILES_PATH}/git/git-prompt.sh"
 
-  # git-completion auto complement git command
+  # git-completion: enable auto complement git command
   source "${DOTFILES_PATH}/git/git-completion.bash"
 
-
-  # Custom prompt
-  export PS1='\[\e]0;\w\a\]\n\[\e[01;32m\]\u@\h\[\e[0m\]: \[\e[01;34m\]\w\[\e[01;33m\]`__git_ps1`\[\e[0m\]\n\$ '
 
   # Default prompt
   # export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[35m\]$MSYSTEM\[\e[0m\] \[\e[33m\]\w\[\e[0m\]\n\$ '
 
+  # Custom prompt
+  export PS1='\[\e]0;\w\a\]\n\[\e[01;32m\]\u@\h\[\e[0m\]: \[\e[01;34m\]\w\[\e[01;33m\]`__git_ps1`\[\e[0m\]\n\$ '
 
-  # .bashrc
+
+  # read .bashrc
   source "${DOTFILES_PATH}/.bashrc"
 
   # bin/
@@ -39,7 +39,11 @@ if [ "${SHELL_ENVIROMENT:=}" = 'MSYS2' ]; then
 
 fi
 
+# Add custom settings for some environment here ...
+#
+#
+
+
 ####################################################################################################
 # security
 alias rm='rm -i'
-

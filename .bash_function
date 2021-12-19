@@ -1,6 +1,6 @@
-# working
+# set working
 
-function setworking()
+function setw()
 {
   WD_WRITTEN_FP="${DOTFILES_PATH}/datas/.working_directory"
 
@@ -9,7 +9,7 @@ function setworking()
   fi
 
   echo "readonly working_directory='`pwd`'" >> ${WD_WRITTEN_FP}
-  echo "set working_directory: `pwd`"
+  echo "Set current working directory to `pwd`"
 }
 
 
@@ -24,4 +24,3 @@ function snow()
 {
     clear;while :;do echo $LINES $COLUMNS $(($RANDOM%$COLUMNS));sleep 0.1;done|gawk '{a[$3]=0;for(x in a) {o=a[x];a[x]=a[x]+1;printf "\033[%s;%sH ",o,x;printf "\033[%s;%sH*\033[0;0H",a[x],x;}}'
 }
-

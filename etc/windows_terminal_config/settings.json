@@ -16,9 +16,9 @@
     // Ubuntu-20.04
     // "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
     // Git Bash
-    // "{29bb3953-cc76-4eb2-a91e-b67ee2789869}",
+    "{29bb3953-cc76-4eb2-a91e-b67ee2789869}",
     // MSYS2
-    "{be5ac58c-7409-45d2-bd3d-c7583fc65e70}",
+    // "{be5ac58c-7409-45d2-bd3d-c7583fc65e70}",
 
     // You can add more global application settings here.
     // To learn more about global settings, visit https://aka.ms/terminal-global-settings
@@ -47,19 +47,19 @@
             {
                 // Make changes here to the powershell.exe profile.
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
-                "hidden": false,
                 "startingDirectory": "D:/",
 
-                // Custom_1 - Frost
+                // 1 - Frost:
                 // "acrylicOpacity": 0.7,
                 // "colorScheme" : "Frost",
                 // "cursorColor" : "#000000",
                 // "fontFace" : "Cascadia Code PL",
                 // "useAcrylic": true,
 
-                // Custom_2
+                // 2:
                 "colorScheme" : "Campbell Powershell",
                 "useAcrylic": true,
                 "acrylicOpacity": 0.5,
@@ -69,13 +69,12 @@
             {
                 // Make changes here to the cmd.exe profile.
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
                 "name": "Command Prompt",
                 "commandline": "cmd.exe",
-                // "commandline": "cmd.exe wt -p \"Git Bash\"",
-                "hidden": false,
                 "startingDirectory": "D:/",
                 
-                // Custom
+                // 1:
                 "colorScheme" : "Vintage",
                 "fontFace": "B612 Mono",
                 // "fontFace": "Console",
@@ -93,57 +92,57 @@
             },
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            //////////////////////////////////////////////// Git Bach ///////////////////////////////////////////////////////////
+            //////////////////////////////////////////////// Git Bash ///////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             {
 	            "guid" : "{29bb3953-cc76-4eb2-a91e-b67ee2789869}",
 	            "hidden": false,
-	            "name": "Git Bash",          	
-	            "commandline" : "C:/Program Files/Git/bin/bash.exe --login -i",
-	            "icon": "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico",
+	            "name": "Git Bash",
 	            "tabTitle": "Git Bash",
-	            "padding" : "5, 0, 5, 0",
-	            // "fontFace" : "consolas",
 	            "suppressApplicationTitle": true,
-	            "startingDirectory": "D:/",
+	            "icon": "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico",
 
-	            // Custom
-	            "colorScheme" : "Raspberry",
-	            "useAcrylic": true,
-                // "acrylicOpacity": 0.86,
-                "acrylicOpacity": 0.8,
-                // "acrylicOpacity": 0.5,
-	            "fontFace": "Cascadia Mono",
-	            "fontSize": 12,
+	            "commandline" : "C:/Program Files/Git/bin/bash.exe --login -i",
+	            "startingDirectory": "D:/Workspace",
+
+				// 1:
+	            "colorScheme" : "Castle Blue",
+	            "fontSize": 10,
+	            "padding": "3",
+	            "cursorShape": "filledBox",
+                "scrollbarState": "hidden",
+
+	            // 2:
+	            // "colorScheme" : "Raspberry",
+	            // "fontFace": "Cascadia Mono",
+	            // "fontSize": 12,
+	            // "useAcrylic": true,
+                // "acrylicOpacity": 0.8,
             },
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ////////////////////////////////////////////////// MSYS2 ////////////////////////////////////////////////////////////
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             {
                 "guid": "{be5ac58c-7409-45d2-bd3d-c7583fc65e70}",
-                "hidden": false,
+                "hidden": true,
                 "name": "MSYS2",
+                "tabTitle": "MSYS2",
+                "suppressApplicationTitle": true,
+                "icon": "C:/msys64/msys2.ico",
+
                 // "commandline" : "C:/msys64/msys2_shell.cmd -defterm -no-start -mingw32",
                 // "commandline" : "C:/msys64/msys2_shell.cmd -defterm -no-start -mingw64",
                 // "commandline" : "C:/msys64/msys2_shell.cmd -defterm -no-start -msys -where \"D:/\"",
                 // "commandline" : "cmd.exe /c \"set MSYSTEM=MINGW64&& set MSYS=winsymlinks:nativestrict&& C:/msys64/usr/bin/bash.exe --login\"",
                 "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -msys",
-                "icon": "C:/msys64/msys2.ico",
-                "tabTitle": "MSYS2",
-                "suppressApplicationTitle": true,
+
                 // "startingDirectory": "%USERPROFILE%",
                 "startingDirectory": "D:/Workspace",
-                // "startingDirectory": "D:/",
-                // "startingDirectory": "D:/Workspace/twitter_clone", // for debug
-                // "startingDirectory" : "C:/msys64/home",
 
                 // Custom 
                 "colorScheme" : "Castle Blue",
+	            "fontSize": 10,
                 // "colorScheme" : "Raspberry",
                 // "useAcrylic": true,
                 // "acrylicOpacity": 0.8,
@@ -156,8 +155,7 @@
                 // "backgroundImageOpacity": 0.4,
                 "cursorShape": "filledBox",
                 "scrollbarState": "hidden",
-	            "padding" : "5, 0, 5, 0",
-	            // "padding": "0 0 0 0",
+	            "padding": "3",
 	            // "none"、"fill"、"uniform"、"uniformToFill"
                 // "backgroundImageStretchMode": "uniformToFill",
                 // "center"、"left"、"top"、"right"、"bottom"
@@ -175,13 +173,13 @@
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
                 "name": "Ubuntu-20.04",
-                "source": "Windows.Terminal.Wsl",
-                "icon": "%USERPROFILE%/WindowsTerminal/Icons/linux/x96.ico",
                 "tabTitle": "Ubuntu-20.04",
                 "suppressApplicationTitle": true,
-                // "startingDirectory": "%USERPROFILE%",
-                // "startingDirectory": "D:/",
+                "icon": "%USERPROFILE%/WindowsTerminal/Icons/linux/x96.ico",
+
+                "source": "Windows.Terminal.Wsl",
                 "startingDirectory": "//wsl$/Ubuntu-20.04/home/felipe",
+                
                 // "fontFace": "Ubuntu Mono",
                 // "fontSize": 14,
 

@@ -22,11 +22,8 @@ alias download='cd /d/Downloads'
 alias xampp='cd /c/xampp/htdocs'
 
 
-
 # MongoDB
-alias mongod='mongod --config "C:\\mongodb\\mongod.conf"'
-
-
+# alias mongod='mongod --config "C:\\mongodb\\mongod.conf"'
 
 
 # general

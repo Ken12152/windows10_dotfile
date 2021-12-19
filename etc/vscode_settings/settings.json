@@ -1,23 +1,19 @@
 {
+    "editor.tabSize": 2,
     // "workbench.colorCustomizations": {
     //     "editor.background": "#0d1117",
     //     "editorGutter.background": "#0d1117",
     //     "statusBar.background": "#0d1117",
     // },
-
-    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "left",
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": true,
     "window.newWindowDimensions": "maximized",
-
-
     // font
     "editor.fontFamily": "Hack, monospace",
     "editor.fontWeight": "500",
     "editor.fontSize": 15.0,
-
-
     // editor
     "breadcrumbs.enabled": false,
     "editor.minimap.enabled": true,
@@ -27,8 +23,6 @@
     "editor.renderWhitespace": "none",
     "editor.cursorBlinking": "smooth",
     "editor.snippetSuggestions": "top",
-
-
     // explorer
     // "window.menuBarVisibility": "default",
     "explorer.confirmDragAndDrop": true,
@@ -49,12 +43,8 @@
         "dist/bundle.js": true,
     },
 
-
-    // C & C++
-    "C_Cpp.updateChannel": "Insiders",
-
-
-    // html format
+    // language format setting
+    // html
     "html.format.extraLiners": "",
     "html.format.endWithNewline": true,
     "html.format.maxPreserveNewLines": 1,
@@ -65,15 +55,26 @@
         "editor.suggest.insertMode": "replace"
     },
 
-
     // javascript
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {
+        "editor.tabSize": 2,
+    },
 
+    // C & C++
+    "C_Cpp.updateChannel": "Insiders",
 
     // vim
+    "vim.surround": true,
+
+    "vim.easymotion": true,
+    "vim.easymotionKeys": "sdfghjkl",
+
     "vim.hlsearch": true,
     "vim.foldfix": true,
     "vim.incsearch": true,
+
+    "vim.leader": "<space>",
 
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["j"], "after": ["g", "j"] },
@@ -111,34 +112,43 @@
     "vim.highlightedyank.color": "rgba(1, 240, 170, 0.5)", 
     "vim.highlightedyank.duration": 201, "vim.useSystemClipboard": true, 
 
+    // eslint
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+
+    // styled-components
+    "emmet.triggerExpansionOnTab": true,
 
     // code-runner
     "code-runner.clearPreviousOutput": true,
 
-
     // liveServer
     "liveServer.settings.donotShowInfoMsg": true,
 
-
     // terminal
-    "terminal.integrated.rendererType": "dom",
-
-    // use gitbash
-    // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-
-    // use msys2
-    "terminal.integrated.shell.windows": "C:\\msys64\\usr\\bin\\bash.exe",
-    "terminal.integrated.env.windows": {
-        "MSYSTEM": "MINGW64",
-        "CHERE_INVOKING": "1"
+    "terminal.integrated.defaultProfile.windows": "MSYS2",
+    "terminal.integrated.profiles.windows": {
+        "MSYS2": {
+            "overrideName": true,
+            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+            "env": {
+                "MSYSTEM": "MINGW64",
+                "CHERE_INVOKING": "1"
+            },
+            "args": [
+                "--login"
+            ],
+        },
     },
-    "terminal.integrated.shellArgs.windows": [
-        "--login"
-    ],
-    "backgroundCover.imagePath": "d:\\Kenzo\\Wallpaper\\0.Destaque do Windows\\1b6500d8769cc51833bb33497d25688ab4caf34394855cfcf24a3c957f19ebb9.jpg",
+
+    // random background
+    "backgroundCover.imagePath": "d:\\Kenzo\\Wallpaper\\0.Destaque do Windows\\854a449545c1b19c2013a48d044b380469b157c85e8003d7cdfe3cb5a6d4b724.jpg",
     "backgroundCover.opacity": 0.4,
     "backgroundCover.randomImageFolder": "d:\\Kenzo\\Wallpaper\\0.Destaque do Windows",
-    "backgroundCover.autoStatus": true,
+    "backgroundCover.autoStatus": false,
+
+    // etc
     "workbench.colorTheme": "Dark+ Black",
-    "window.zoomLevel": -1
+    "window.zoomLevel": -1,
 }
