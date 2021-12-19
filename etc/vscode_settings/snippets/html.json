@@ -12,7 +12,14 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
+	"PHP": {
+		"prefix": "php",
+		"body": [
+			"<?php",
+			"?>"
+		],
+		"description": "Init PHP tag"
+	},
 	"import css": {
 		"prefix": "icss",
 		"body": [
@@ -20,7 +27,6 @@
 		],
 		"description": "import <link rel=\"stylesheet\" href=\"...\""
 	},
-
 	"import javascript script": {
 		"prefix": "ijs",
 		"body": [
@@ -28,4 +34,19 @@
 		],
 		"description": "<script src=\"...\"><script>"
 	},
+	"insert inline PHP": {
+		"prefix": "inline",
+		"body": [
+			"<?php foreach() { ?>",
+			"<?php } ?>"
+		],
+		"description": "insert inline PHP"
+	},
+	"insert inline PHP short": {
+		"prefix": "short inline",
+		"body": [
+			"<?= $1 ?>",
+		],
+		"description": "insert short inline PHP"
+	}
 }

@@ -1,5 +1,6 @@
 {
     "editor.tabSize": 2,
+    "editor.insertSpaces": true,
     // "workbench.colorCustomizations": {
     //     "editor.background": "#0d1117",
     //     "editorGutter.background": "#0d1117",
@@ -27,6 +28,7 @@
     // "window.menuBarVisibility": "default",
     "explorer.confirmDragAndDrop": true,
     "explorer.confirmDelete": true,
+    "explorer.compactFolders": false,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -55,14 +57,40 @@
         "editor.suggest.insertMode": "replace"
     },
 
+    // css
+    "[css]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+    },
+
     // javascript
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[javascript]": {
         "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+    },
+
+    // PHP
+    "[php]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
     },
 
     // C & C++
     "C_Cpp.updateChannel": "Insiders",
+
+    // json
+    "[json]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": [
+            "document"
+        ]
+    },
 
     // vim
     "vim.surround": true,
@@ -151,4 +179,22 @@
     // etc
     "workbench.colorTheme": "Dark+ Black",
     "window.zoomLevel": -1,
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "workbench.startupEditor": "none",
+    "window.restoreWindows": "none",
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ],
+    "vsicons.dontShowNewVersionMessage": true,
+    "git.ignoreMissingGitWarning": true
 }
