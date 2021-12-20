@@ -1,35 +1,230 @@
-" import dein plugins
+" Import dein plugins
 source ~/.dotfiles/.vimrc.dein
 
-" import keybindings
+" Import keybindings
 source ~/.dotfiles/.vimrc.keybind
 
 
-"-----------------------------------------------------------------------------
+
+
+
+
+augroup init_overwrite
+	autocmd!
+
+	" Disable hard wrap (overwrite default set tw=78)
+	autocmd BufEnter * setlocal textwidth=0
+
+	" Disable auto comment on insert new line
+	autocmd BufEnter * setlocal formatoptions-=r
+	autocmd BufEnter * setlocal formatoptions-=o
+augroup END
+
+
+
+
+
+"----------------------------------------
+" System
+"----------------------------------------
+
+" Charset in baffer
+"set encoding=utf-8
+
+" Use utf-8 on save
+set fileencoding=utf-8
+
+" Don't create backup files
+set nobackup
+
+" Dont't create swapfile
+set noswapfile
+
+" If there is a file changed externally, read it again
+set autoread
+
+" Can open another file even if there is an unsaved content
+set hidden
+
+" If there is an unsaved file, confirm saving before
+" set confirm
+
+" Don't emit beel sound non screen flicker
+set visualbell t_vb=
+
+" Share clipboard with OS
+set clipboard+=unnamed
+
+
+
+
+
+"----------------------------------------
+" Editor
+"----------------------------------------
+
+" Enable syntax highlight
+syntax enable
+
+" Show line numbers on the sidebar
+set number
+
+" Highlight the line currently under cursor
+set cursorline
+
+" Highlight the comlumn currently under cursor
+set cursorcolumn
+
+" The cursor will briefly(0.1s) jump to the matching brace(e.g. '()', '[]', '{}' ) when you insert one
+set showmatch matchtime=1
+
+" The number of screen lines to keep above and below the cursor
+set scrolloff=5
+
+" The number of screen columns to keep to the left and right of the cursor on scroll
+set sidescrolloff=12
+
+" Enable soft wrapping at the edge of the screen
+set wrap
+
+" Make it not wrap in the middle of a word
+set linebreak
+
+" Make a vertical column in the background at n characters
+"set colorcolumn=80
+
+" Allow move the cursor to the previous/next line when the cursor is on the first/last character in the line.
+set whichwrap=b,s,h,l,<,>,[,],~
+
+" Allow to use backspace key
+set backspace=indent,eol,start
+
+" Always try to show a paragraph’s last line
+set display=lastline
+
+" Display '_' in the space at the end of the line
+set list listchars=trail:_
+
+" Display '$' at the end of the line
+"set listchars+=eol:$
+
+" Enable hard wrap
+"set textwidth=78
+
+" Disable hard wrap
+set textwidth=0
+
+
+
+
+
+"----------------------------------------
+" Indent
+"----------------------------------------
+
+" Smart auto indent when insert new line
+set autoindent
+set smartindent
+
+" Indent width
+set shiftwidth=2
+
+" Insert space when insert Tab
+"set expandtab
+
+" Tab width when insert
+set softtabstop=2
+
+" Tab width when reading
+set tabstop=2
+
+" Display '>_' in the tab
+set list listchars+=tab:>_
+
+
+
+
+
+
+"----------------------------------------
+" Search
+"----------------------------------------
+
+" Case insensitive when searching
+set ignorecase
+
+" Ignore only lowercase letters (uppercase is not ignored, use with ignorecase)
+set smartcase
+
+" When the search progresses to the end of the file, search again from the beginning
+set wrapscan
+
+" Incremental search (start searching since you enter the first letter of the search word)
+set incsearch
+
+" Highlight search results
+set hlsearch
+
+
+
+
+
+"----------------------------------------
+" UI
+"----------------------------------------
+" Show command your typing
+set showcmd
+
+" Show mode
+set showmode
+
+" Command line auto-completion with tab key
+set wildmenu
+
+
+
+
+
+"----------------------------------------
+" Statusline
+"----------------------------------------
+
+" Always display the status bar
+set laststatus=2
+
+" Always show cursor position
+set ruler
+
+
+
+
+
+
+
+
+
+
+"----------------------------------------
 " Colorscheme
-"-----------------------------------------------------------------------------
+"----------------------------------------
 " molokai, none( ) 
-autocmd ColorScheme * highlight LineNr ctermbg=0 guibg=#000000 
-autocmd ColorScheme * highlight Normal ctermbg=0 guibg=#000000 
+autocmd ColorScheme * highlight LineNr ctermbg=0 guibg=#000000
+autocmd ColorScheme * highlight Normal ctermbg=0 guibg=#000000
 colorscheme molokai
 
 "set background=dark
 "set background=light
 
 
-"-----------------------------------------------------------------------------
+"----------------------------------------
 " dein.vim plugins config
-"-----------------------------------------------------------------------------
+"----------------------------------------
 " lightline.vim
 " status bar colorscheme
 let g:lightline = {
 \ 'colorscheme': 'landscape',
 \ }
 
-set ruler
-set showcmd
-set showmode
-set laststatus=2
 
 
 " CtrlP
@@ -39,61 +234,4 @@ let g:ctrlp_types = ['fil']
 "let g:ctrlp_extensions = ['funky', 'commandline']
 
 
-"-----------------------------------------------------------------------------
-" General
-"-----------------------------------------------------------------------------
-set fenc=utf-8
-set nobackup
-set noswapfile
-set autoread
-set hidden
-set wildmenu
 
-"set clipboard=unnamedplus
-"set clipboard+=unnamed
-"set guioptions+=a
-
-" Cursor
-set number
-set cursorline
-set cursorcolumn
-set showmatch
-
-"set virtualedit=onemore
-
-set whichwrap=b,s,h,l,<,>,[,],~
-
-set backspace=indent,eol,start
-
-" Tab
-set list listchars=tab:\▸\-
-
-set expandtab
-set tabstop=2
-set softtabstop=2
-set autoindent
-set smartindent
-set shiftwidth=2
-
-" Search
-set ignorecase
-set smartcase
-set incsearch
-set wrapscan
-set hlsearch
-
-
-"-----------------------------------------------------------------------------
-" Bar scroll, menu, tool "
-"-----------------------------------------------------------------------------
-"set guioptions-=m
-"set guioptions-=T
-
-"set guioptions-=b
-
-"set guioptions-=r
-"set guioptions-=R
-"set guioptions-=l
-"set guioptions-=L
-
-set vb t_vb=
