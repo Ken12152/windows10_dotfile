@@ -96,4 +96,4 @@ set hlsearch
 "set guioptions-=l
 "set guioptions-=L
 
-
+set vb t_vb=
