@@ -17,6 +17,8 @@
     // "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
     // Git Bash
     "{29bb3953-cc76-4eb2-a91e-b67ee2789869}",
+    // Git Bash Default
+    // "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
     // MSYS2
     // "{be5ac58c-7409-45d2-bd3d-c7583fc65e70}",
 
@@ -95,6 +97,13 @@
             //////////////////////////////////////////////// Git Bash ///////////////////////////////////////////////////////////
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             {
+                // Default:
+                // "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                // "name": "Git Bash",
+                // "source": "Git",
+	            // "startingDirectory": "D:/Workspace",
+
+                // Custom:
 	            "guid" : "{29bb3953-cc76-4eb2-a91e-b67ee2789869}",
 	            "hidden": false,
 	            "name": "Git Bash",
@@ -156,10 +165,10 @@
                 "cursorShape": "filledBox",
                 "scrollbarState": "hidden",
 	            "padding": "3",
-	            // "none"、"fill"、"uniform"、"uniformToFill"
+	            // "none", "fill", "uniform", "uniformToFill"
                 // "backgroundImageStretchMode": "uniformToFill",
-                // "center"、"left"、"top"、"right"、"bottom"
-                // "topLeft"、"topRight"、"bottomLeft"、"bottomRight"
+                // "center", "left", "top", "right", "bottom"
+                // "topLeft", "topRight", "bottomLeft", "bottomRight"
                 // "backgroundImageAlignment": "topLeft", 
                 // "backgroundImageAlignment": "topRight", 
                 // "backgroundImageAlignment": "center", 
@@ -178,30 +187,31 @@
                 "icon": "%USERPROFILE%/WindowsTerminal/Icons/linux/x96.ico",
 
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "//wsl$/Ubuntu-20.04/home/felipe",
+                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\felipe",
                 
+                // 1:
                 // "fontFace": "Ubuntu Mono",
-                // "fontSize": 14,
+                // "fontSize": 12,
 
-                // Custom 
+                // 2: 
                 "colorScheme" : "Ubuntu",
-                // "colorScheme" : "Raspberry",
-                "backgroundImage": "%USERPROFILE%/WindowsTerminal/background/ubuntu_16.04.png",
+                // "colorScheme" : "Castle Blue",
+
+	            "padding": "3",
                 "useAcrylic": true,
                 "acrylicOpacity": 0.9,
-                // "acrylicOpacity": 0.5,
                 "cursorShape": "filledBox",
                 "scrollbarState": "hidden",
-	            // "padding": "8, 8, 8, 8",
-	            // "padding": "8, 8, 8, 40",
-	            "padding": "0",
-	            // "none"、"fill"、"uniform"、"uniformToFill"
-                "backgroundImageStretchMode": "uniformToFill",
-                // "center"、"left"、"top"、"right"、"bottom"
-                // "topLeft"、"topRight"、"bottomLeft"、"bottomRight"
-                "backgroundImageAlignment": "topLeft", 
-                "backgroundImageAlignment": "topRight", 
+
+                "backgroundImage": "%USERPROFILE%/WindowsTerminal/background/ubuntu_16.04.png",
                 // "backgroundImageOpacity": 0.5,
+
+	            // "none", "fill", "uniform", "uniformToFill"
+                "backgroundImageStretchMode": "uniformToFill",
+
+                // "center", "left", "top", "right", "bottom"
+                // "topLeft", "topRight", "bottomLeft", "bottomRight"
+                "backgroundImageAlignment": "topRight", 
             },
         ]
     },
