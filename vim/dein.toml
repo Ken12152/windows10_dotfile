@@ -14,5 +14,5 @@ repo = 'Yggdroot/indentLine'
 repo = 'ctrlpvim/ctrlp.vim'
 
 [[plugins]]
-repo = 'tpope/vim-surround.vim'
+repo = 'tpope/vim-surround'
 
