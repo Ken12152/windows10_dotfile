@@ -17,6 +17,9 @@ nnoremap s "_s
 
 vnoremap p "_dp
 
+nmap ff <Plug>Csurround"'
+nmap tt <Plug>Csurround'"
+
 " Open .vimrc: <space> + .
 nnoremap <space>. :<c-u>tabedit $MYVIMRC<CR>
 
