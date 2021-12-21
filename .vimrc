@@ -1,5 +1,5 @@
 " Import dein plugins (this need to import in the begnning)
-source ~/.dotfiles/.vimrc.dein
+source ~/.dotfiles/vim/.vimrc.dein
 
 
 
