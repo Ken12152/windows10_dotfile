@@ -1,6 +1,11 @@
 " Import dein plugins ( this need to import in the begnning )
 source ~/.dotfiles/vim/.vimrc.dein
 
+" Import plugins settings
+source ~/.dotfiles/.vimrc.plugins
+
+filetype plugin indent on
+
 
 
 " Import general settings
@@ -11,10 +16,6 @@ source ~/.dotfiles/.vimrc.keybind
 
 " Import color settings
 source ~/.dotfiles/.vimrc.color
-
-" Import plugins settings
-source ~/.dotfiles/.vimrc.plugins
-
 
 
 

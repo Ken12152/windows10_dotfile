@@ -8,7 +8,11 @@ repo = 'tomasr/molokai'
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]
-repo = 'Yggdroot/indentLine' 
+repo = 'Yggdroot/indentLine'
 
 [[plugins]]
-repo = 'ctrlpvim/ctrlp.vim' 
+repo = 'ctrlpvim/ctrlp.vim'
+
+[[plugins]]
+repo = 'tpope/vim-surround.vim'
+
