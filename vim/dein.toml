@@ -16,3 +16,6 @@ repo = 'ctrlpvim/ctrlp.vim'
 [[plugins]]
 repo = 'tpope/vim-surround'
 
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
