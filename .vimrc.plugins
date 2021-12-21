@@ -1,0 +1,17 @@
+"----------------------------------------
+" dein.vim plugins config
+"----------------------------------------
+" lightline.vim
+" status bar colorscheme
+let g:lightline = {
+\ 'colorscheme': 'landscape',
+\ }
+
+
+
+" CtrlP
+let g:ctrlp_match_window = 'top,order:ttb,min:10,max:10,results:100'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_types = ['fil']
+"let g:ctrlp_extensions = ['funky', 'commandline']
+

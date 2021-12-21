@@ -1,0 +1,11 @@
+"----------------------------------------
+" Colorscheme
+"----------------------------------------
+" molokai, none( ) 
+autocmd ColorScheme * highlight LineNr ctermbg=0 guibg=#000000
+autocmd ColorScheme * highlight Normal ctermbg=0 guibg=#000000
+colorscheme molokai
+
+"set background=dark
+"set background=light
+
