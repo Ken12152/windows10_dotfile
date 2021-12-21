@@ -21,22 +21,22 @@ source ~/.dotfiles/.vimrc.color
 
 " Reload automatically .vimrc after save ~/.vimrc.* file
 augroup auto_reload_vimrc
-	autocmd!
+  autocmd!
 
-	" in case symbolic link
-	autocmd BufWritePost ~/.vimrc source $MYVIMRC
-	autocmd BufWritePost ~/.vimrc.general source $MYVIMRC
-	autocmd BufWritePost ~/.vimrc.keybind source $MYVIMRC
-	autocmd BufWritePost ~/.vimrc.color source $MYVIMRC
-	autocmd BufWritePost ~/.vimrc.plugins source $MYVIMRC
+  " in case symbolic link
+  autocmd BufWritePost ~/.vimrc source $MYVIMRC
+  autocmd BufWritePost ~/.vimrc.general source $MYVIMRC
+  autocmd BufWritePost ~/.vimrc.keybind source $MYVIMRC
+  autocmd BufWritePost ~/.vimrc.color source $MYVIMRC
+  autocmd BufWritePost ~/.vimrc.plugins source $MYVIMRC
 
 
-	" ~/.dotfiles/
-	autocmd BufWritePost ~/.dotfiles/.vimrc source $MYVIMRC
-	autocmd BufWritePost ~/.dotfiles/.vimrc.general source $MYVIMRC
-	autocmd BufWritePost ~/.dotfiles/.vimrc.keybind source $MYVIMRC
-	autocmd BufWritePost ~/.dotfiles/.vimrc.color source $MYVIMRC
-	autocmd BufWritePost ~/.dotfiles/.vimrc.plugins source $MYVIMRC
+  " ~/.dotfiles/
+  autocmd BufWritePost ~/.dotfiles/.vimrc source $MYVIMRC
+  autocmd BufWritePost ~/.dotfiles/.vimrc.general source $MYVIMRC
+  autocmd BufWritePost ~/.dotfiles/.vimrc.keybind source $MYVIMRC
+  autocmd BufWritePost ~/.dotfiles/.vimrc.color source $MYVIMRC
+  autocmd BufWritePost ~/.dotfiles/.vimrc.plugins source $MYVIMRC
 
 augroup END
 
