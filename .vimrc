@@ -1,4 +1,4 @@
-" Import dein plugins (this need to import in the begnning)
+" Import dein plugins ( this need to import in the begnning )
 source ~/.dotfiles/vim/.vimrc.dein
 
 
@@ -38,4 +38,5 @@ augroup auto_reload_vimrc
 	autocmd BufWritePost ~/.dotfiles/.vimrc.plugins source $MYVIMRC
 
 augroup END
+
 

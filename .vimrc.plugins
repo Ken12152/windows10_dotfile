@@ -1,7 +1,10 @@
-"----------------------------------------
-" dein.vim plugins config
+" Plugins ( from dein.vim )
+
+
+
 "----------------------------------------
 " lightline.vim
+"----------------------------------------
 " status bar colorscheme
 let g:lightline = {
 \ 'colorscheme': 'landscape',
@@ -9,7 +12,9 @@ let g:lightline = {
 
 
 
-" CtrlP
+"----------------------------------------
+" CtrlP.vim
+"----------------------------------------
 let g:ctrlp_match_window = 'top,order:ttb,min:10,max:10,results:100'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_types = ['fil']
