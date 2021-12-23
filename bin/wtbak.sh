@@ -4,7 +4,7 @@
 readonly settings_path='/c/Users/Felipe/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json'
 
 # backup file path
-readonly settings_dest='/c/Users/Felipe/.dotfiles/etc/windows_terminal_config'
+readonly settings_dest='/c/Users/Felipe/.dotfiles/windows_terminal'
 
 
 # settings

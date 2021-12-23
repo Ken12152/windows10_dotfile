@@ -8,8 +8,8 @@ readonly keybindings_path='/c/Users/Felipe/AppData/Roaming/Code/User/keybindings
 readonly snippets_path='/c/Users/Felipe/AppData/Roaming/Code/User/snippets/*'
 
 # backup file path
-readonly settings_dest='/c/Users/Felipe/.dotfiles/etc/vscode_settings'
-readonly snippets_dest='/c/Users/Felipe/.dotfiles/etc/vscode_settings/snippets'
+readonly settings_dest='/c/Users/Felipe/.dotfiles/vscode/'
+readonly snippets_dest='/c/Users/Felipe/.dotfiles/vscode/snippets/'
 
 
 # settings

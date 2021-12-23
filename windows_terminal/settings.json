@@ -187,17 +187,18 @@
                 "icon": "%USERPROFILE%/WindowsTerminal/Icons/linux/x96.ico",
 
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\felipe",
+                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\felipe\\workspace",
                 
                 // 1:
                 // "fontFace": "Ubuntu Mono",
                 // "fontSize": 12,
 
                 // 2: 
-                "colorScheme" : "Ubuntu",
-                // "colorScheme" : "Castle Blue",
+                // "colorScheme" : "Ubuntu",
+                "colorScheme" : "Castle Blue",
 
-	            "padding": "3",
+	            "padding": "1",
+	            // "padding": "3",
                 "useAcrylic": true,
                 "acrylicOpacity": 0.9,
                 "cursorShape": "filledBox",
@@ -223,8 +224,8 @@
     // "theme": "light",
 
     // Tamanho ao iniciar
-    // "launchMode": "default",
-    "launchMode": "maximized",
+    "launchMode": "default",
+    // "launchMode": "maximized",
     //"launchMode": "fullscreen",
 
     // Barra de titulo
