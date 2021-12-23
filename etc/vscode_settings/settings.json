@@ -1,200 +1,200 @@
 {
+  /* --- Files --- */
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules": true
+  },
+
+  /* --- Window --- */
+  "window.restoreWindows": "none",
+  "window.newWindowDimensions": "maximized",
+  "window.zoomLevel": -1,
+  // "window.zoomLevel": -1,
+
+  /* --- Workbench --- */
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.statusBar.visible": true,
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Dark+ Black",
+  "workbench.iconTheme": "material-icon-theme",
+
+  "workbench.colorCustomizations": {
+    // "editor.background": "#0d1117",
+    // "editorGutter.background": "#0d1117",
+    // "statusBar.background": "#0d1117",
+  },
+
+  /* --- Editor --- */
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "on",
+  "editor.renderWhitespace": "trailing",
+  "editor.cursorBlinking": "smooth",
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": true,
+  "editor.minimap.size": "fit",
+  "editor.snippetSuggestions": "top",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.fontFamily": "Hack,  monospace",
+  "editor.fontWeight": "500",
+  "editor.fontSize": 15,
+  "editor.renderControlCharacters": false,
+
+  /* --- Explorer --- */
+  "explorer.confirmDragAndDrop": true,
+  "explorer.confirmDelete": true,
+  "explorer.compactFolders": false,
+
+  /* --- Search --- */
+  "search.showLineNumbers": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "public/bundle.js": true,
+    "dist/bundle.js": true,
+  },
+
+  /* --- Terminal --- */
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.confirmOnExit": "always",
+  "terminal.integrated.letterSpacing": 1,
+  "terminal.integrated.cwd": "D:\\Workspace",
+
+  /* --- Emmet --- */
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+
+  /* --- For each language --- */
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.suggest.insertMode": "replace",
+  },
+
+  "html.format.extraLiners": "",
+  "html.format.endWithNewline": true,
+  "html.format.maxPreserveNewLines": 1,
+  "html.format.unformatted": "span",
+  "html.format.wrapLineLength": 0,
+
+  "[css]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
-    // "workbench.colorCustomizations": {
-    //     "editor.background": "#0d1117",
-    //     "editorGutter.background": "#0d1117",
-    //     "statusBar.background": "#0d1117",
-    // },
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "left",
-    "workbench.statusBar.visible": true,
-    "workbench.activityBar.visible": true,
-    "window.newWindowDimensions": "maximized",
-    // font
-    "editor.fontFamily": "Hack, monospace",
-    "editor.fontWeight": "500",
-    "editor.fontSize": 15.0,
-    // editor
-    "breadcrumbs.enabled": false,
-    "editor.minimap.enabled": true,
-    "editor.minimap.showSlider": "always",
-    // "editor.minimap.renderCharacters": false,
-    "editor.wordWrap": "on",
-    "editor.renderWhitespace": "none",
-    "editor.cursorBlinking": "smooth",
-    "editor.snippetSuggestions": "top",
-    // explorer
-    // "window.menuBarVisibility": "default",
-    "explorer.confirmDragAndDrop": true,
-    "explorer.confirmDelete": true,
-    "explorer.compactFolders": false,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "node_modules": true
+  },
+
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+  },
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "[php]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+  },
+
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.quickSuggestions": {
+      "strings": true,
     },
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/*.code-search": true,
-        "public/bundle.js": true,
-        "dist/bundle.js": true,
-    },
+  },
 
-    // language format setting
-    // html
-    "html.format.extraLiners": "",
-    "html.format.endWithNewline": true,
-    "html.format.maxPreserveNewLines": 1,
-    "html.format.unformatted": "span",
-    "html.format.wrapLineLength": 0, // default: 120
-    "[html]": {
-        "editor.tabSize": 2,
-        "editor.suggest.insertMode": "replace"
-    },
+  /* --- Extensions --- */
 
-    // css
-    "[css]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-    },
+  /* Eslint */
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
 
-    // javascript
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[javascript]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-    },
+  /* Code Runner */
+  "code-runner.clearPreviousOutput": true,
 
-    // PHP
-    "[php]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-    },
+  /* Live Server */
+  "liveServer.settings.donotShowInfoMsg": true,
 
-    // C & C++
-    "C_Cpp.updateChannel": "Insiders",
+  /* --- Vim --- */
+  "vim.surround": true,
 
-    // json
-    "[json]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace",
-        "gitlens.codeLens.scopes": [
-            "document"
-        ]
-    },
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "sdfghjkl",
 
-    // vim
-    "vim.surround": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
 
-    "vim.easymotion": true,
-    "vim.easymotionKeys": "sdfghjkl",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(1, 240, 170, 0.5)",
+  "vim.highlightedyank.duration": 201,
 
-    "vim.hlsearch": true,
-    "vim.foldfix": true,
-    "vim.incsearch": true,
+  "vim.foldfix": true,
+  "vim.visualstar": true,
+  "vim.useSystemClipboard": true,
 
-    "vim.leader": "<space>",
+  /* Keymaps */
+  "vim.leader": "<space>",
 
-    "vim.normalModeKeyBindingsNonRecursive": [
-        { "before": ["j"], "after": ["g", "j"] },
-        { "before": ["k"], "after": ["g", "k"] },
-        { "before": ["<C-j>"], "after": ["5", "g", "j"] },
-        { "before": ["<C-k>"], "after": ["5", "g","k"] },
-        { "before": ["C-h"], "after": ["^"] },
-        { "before": ["C-l"], "after": ["$"] },
-        { "before": ["x"], "after": ["\"", "_", "x"] },
-        { "before": ["s"], "after": ["\"", "_", "s"] },
-        { "before": ["<Esc>"], "commands": [":nohl"] },
-        { "before": ["<C-[>", "<C-[>"], "commands": [":nohl"] }
-    ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    { "before": ["j", "j"], "after": ["<Esc>"] },
 
-    "vim.normalModeKeyBindings": [],
+    { "before": [";", ";"], "commands": ["editor.action.triggerSuggest"] },
+  ],
 
-    "vim.insertModeKeyBindings": [
-      { "before": ["j", "j"], "after": ["<Esc>"] }
-    ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["j"], "after": ["g", "j"] },
+    { "before": ["k"], "after": ["g", "k"] },
 
-    "vim.visualModeKeyBindingsNonRecursive": [
-        { "before": ["<C-j>"], "after": ["5", "j"] },
-        { "before": ["<C-k>"], "after": ["5", "k"] },
-        { "before": ["p"], "after": ["\"", "_", "d", "P"] },
-        { "before": ["C-h"], "after": ["^"] },
-        { "before": ["C-l"], "after": ["$"] },
-    ],
+    { "before": ["<C-j>" ], "after": ["5", "g", "j"] },
+    { "before": ["<C-k>"], "after": ["5", "g", "k"] },
 
-    "vim.handleKeys": {
-        "<C-w>": false,
-        "<C-b>": false,
-    },
+    { "before": ["<C-h>" ], "after": ["^"] },
+    { "before": ["<C-l>"], "after": ["$"] },
 
-    "vim.highlightedyank.enable": true,
-    "vim.highlightedyank.color": "rgba(1, 240, 170, 0.5)", 
-    "vim.highlightedyank.duration": 201, "vim.useSystemClipboard": true, 
+    { "before": ["+"], "after": ["<C-a>"] },
+    { "before": ["-"], "after": ["<C-x>"] },
 
-    // eslint
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
+    { "before": ["x"], "after": ["\"", "_", "x"] },
+    { "before": ["s"], "after": ["\"", "_", "s"] },
 
-    // styled-components
-    "emmet.triggerExpansionOnTab": true,
+    { "before": ["<Esc>"], "commands": [":nohl"] },
+    { "before": ["<C-[>", "<C-[>"], "commands": [":nohl"] },
 
-    // code-runner
-    "code-runner.clearPreviousOutput": true,
+    { "before": ["<Leader>", "w"], "commands": [{ "command": "workbench.action.files.save" }] },
+    { "before": ["<Leader>", "q"], "commands": [{ "command": "workbench.action.closeActiveEditor"}] },
 
-    // liveServer
-    "liveServer.settings.donotShowInfoMsg": true,
+    { "before": ["<C-i>" ], "after": ["g", "h"] },
+    { "before": ["<Leader>", "h" ], "after": ["g", "h"] },
 
-    // terminal
-    "terminal.integrated.defaultProfile.windows": "MSYS2",
-    "terminal.integrated.profiles.windows": {
-        "MSYS2": {
-            "overrideName": true,
-            "path": "C:\\msys64\\usr\\bin\\bash.exe",
-            "env": {
-                "MSYSTEM": "MINGW64",
-                "CHERE_INVOKING": "1"
-            },
-            "args": [
-                "--login"
-            ],
-        },
-    },
+    { "before": ["<C-o>" ], "after": ["g", "b"] },
+    { "before": ["<C-n>" ], "after": ["g", "b"] },
+  ],
 
-    // random background
-    "backgroundCover.imagePath": "d:\\Kenzo\\Wallpaper\\0.Destaque do Windows\\854a449545c1b19c2013a48d044b380469b157c85e8003d7cdfe3cb5a6d4b724.jpg",
-    "backgroundCover.opacity": 0.4,
-    "backgroundCover.randomImageFolder": "d:\\Kenzo\\Wallpaper\\0.Destaque do Windows",
-    "backgroundCover.autoStatus": false,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["<C-j>"], "after": ["5", "j"] },
+    { "before": ["<C-k>"], "after": ["5", "k"] },
 
-    // etc
-    "workbench.colorTheme": "Dark+ Black",
-    "window.zoomLevel": -1,
-    "editor.cursorStyle": "line",
-    "editor.lineNumbers": "on",
-    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "gitlens.advanced.messages": {
-        "suppressGitMissingWarning": true
-    },
-    "workbench.startupEditor": "none",
-    "window.restoreWindows": "none",
-    "mssql.connections": [
-        {
-            "server": "{{put-server-name-here}}",
-            "database": "{{put-database-name-here}}",
-            "user": "{{put-username-here}}",
-            "password": "{{put-password-here}}"
-        }
-    ],
-    "vsicons.dontShowNewVersionMessage": true,
-    "git.ignoreMissingGitWarning": true
+    { "before": ["<C-h>" ], "after": ["^"] },
+    { "before": ["<C-l>"], "after": ["$"] },
+
+    { "before": ["p"], "after": ["\"", "_", "d", "P"] },
+
+    { "before": ["<C-o>" ], "after": ["g", "b"] },
+    { "before": ["<C-n>" ], "after": ["g", "b"] },
+  ],
+
+  "vim.handleKeys": {
+    "<C-w>": false,
+    "<C-b>": false,
+  },
 }
